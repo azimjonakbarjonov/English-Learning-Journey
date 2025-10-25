@@ -7,7 +7,7 @@ import { learningData } from "../data/learningData";
 export const MonthPage = () => {
   const { monthId } = useParams();
   const navigate = useNavigate();
-  const { completedDays, getMonthProgress, getTotalProgress } = useProgress();
+  const { completedDays, getTotalProgress } = useProgress();
 
   const currentMonth = learningData.months.find(
     (m) => m.id === Number(monthId)
