@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="English Learning Journey">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#60a5fa"/>
+      <stop offset="1" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#111827"/>
+      <stop offset="1" stop-color="#312e81"/>
+    </linearGradient>
+  </defs>
+  <rect rx="24" ry="24" width="128" height="128" fill="url(#bg)"/>
+  <!-- stylized book -->
+  <path d="M28 36h40a16 16 0 0 1 16 16v40c-8-6-16-6-24-6H28z" fill="url(#g)"/>
+  <path d="M100 36H60a16 16 0 0 0-16 16v40c8-6 16-6 24-6h32z" fill="#22d3ee" opacity=".9"/>
+  <rect x="36" y="48" width="24" height="4" rx="2" fill="#e5f2ff"/>
+  <rect x="68" y="48" width="24" height="4" rx="2" fill="#e5f2ff"/>
+  <!-- initials -->
+  <text x="64" y="102" text-anchor="middle" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="18" fill="#e5f2ff">ELJ</text>
+</svg>
+
