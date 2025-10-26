@@ -1,14 +1,6 @@
-import type { LanguageData, MonthData } from "../types/types";
+import type { LanguageData } from "../types/types";
 
 // Placeholder data for Korean - to be filled later
-const month1: MonthData = {
-  id: 1,
-  title: "한국어 기초",
-  description: "Asosiy grammatika va so'z boyligi",
-  color: "from-teal-500 to-cyan-500",
-  days: [],
-};
-
 export const koreanData: LanguageData = {
   id: "korean",
   name: "Korean",
@@ -16,7 +8,15 @@ export const koreanData: LanguageData = {
   icon: "🇰🇷",
   color: "from-teal-500 to-cyan-500",
   description: "Koreys tilini professional darajada o'rganing",
-  learningData: {
-    months: [month1],
-  },
+  courses: [
+    {
+      id: "speaking",
+      name: "General Speaking",
+      description: "Kundalik suhbat va umumiy speaking",
+      icon: "💬",
+      color: "from-teal-500 to-cyan-500",
+      duration: "3 oy",
+      learningData: { months: [] },
+    },
+  ],
 };

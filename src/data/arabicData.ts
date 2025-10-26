@@ -1,14 +1,6 @@
-import type { LanguageData, MonthData } from "../types/types";
+import type { LanguageData } from "../types/types";
 
 // Placeholder data for Arabic - to be filled later
-const month1: MonthData = {
-  id: 1,
-  title: "العربية الأساسية",
-  description: "Asosiy grammatika va so'z boyligi",
-  color: "from-emerald-500 to-green-500",
-  days: [],
-};
-
 export const arabicData: LanguageData = {
   id: "arabic",
   name: "Arabic",
@@ -16,7 +8,15 @@ export const arabicData: LanguageData = {
   icon: "🇸🇦",
   color: "from-emerald-500 to-green-500",
   description: "Arab tilini professional darajada o'rganing",
-  learningData: {
-    months: [month1],
-  },
+  courses: [
+    {
+      id: "speaking",
+      name: "General Speaking",
+      description: "Kundalik suhbat va umumiy speaking",
+      icon: "💬",
+      color: "from-emerald-500 to-green-500",
+      duration: "3 oy",
+      learningData: { months: [] },
+    },
+  ],
 };

@@ -74,6 +74,17 @@ export interface LearningData {
   months: MonthData[];
 }
 
+export interface CourseData {
+  id: string;
+  name: string;
+  description: string;
+  icon: string;
+  color: string;
+  level?: string;
+  duration: string;
+  learningData: LearningData;
+}
+
 export interface LanguageData {
   id: string;
   name: string;
@@ -81,7 +92,7 @@ export interface LanguageData {
   icon: string;
   color: string;
   description: string;
-  learningData: LearningData;
+  courses: CourseData[];
 }
 
 export interface PlatformData {

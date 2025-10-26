@@ -14,9 +14,10 @@ export const useProgress = () => {
   const toggleDayComplete = (
     monthId: number,
     dayId: number,
-    languageId: string = "english"
+    languageId: string = "english",
+    courseId: string = "speaking"
   ) => {
-    const key = `${languageId}-month${monthId}-day${dayId}`;
+    const key = `${languageId}-${courseId}-month${monthId}-day${dayId}`;
     const newCompleted = { ...completedDays, [key]: !completedDays[key] };
     setCompletedDays(newCompleted);
     localStorage.setItem(
@@ -27,10 +28,11 @@ export const useProgress = () => {
 
   const getMonthProgress = (
     monthId: number,
-    languageId: string = "english"
+    languageId: string = "english",
+    courseId: string = "speaking"
   ) => {
     const monthCompleted = Object.keys(completedDays).filter((k) =>
-      k.startsWith(`${languageId}-month${monthId}`)
+      k.startsWith(`${languageId}-${courseId}-month${monthId}`)
     ).length;
     return {
       completed: monthCompleted,

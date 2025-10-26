@@ -11,8 +11,9 @@ import { getLanguageById } from "../data/platformData";
 import { useState } from "react";
 
 export const DayPage = () => {
-  const { languageId, monthId, dayId } = useParams<{
+  const { languageId, courseId, monthId, dayId } = useParams<{
     languageId: string;
+    courseId: string;
     monthId: string;
     dayId: string;
   }>();
@@ -26,19 +27,27 @@ export const DayPage = () => {
     return <Navigate to="/" replace />;
   }
 
-  const currentMonth = languageData.learningData.months.find(
+  const courseData = courseId
+    ? languageData.courses.find((c) => c.id === courseId)
+    : null;
+
+  if (!courseData) {
+    return <Navigate to={`/${languageId}`} replace />;
+  }
+
+  const currentMonth = courseData.learningData.months.find(
     (m) => m.id === Number(monthId)
   );
 
   const currentDay = currentMonth?.days.find((d) => d.id === Number(dayId));
 
   if (!currentMonth || !currentDay) {
-    navigate(`/${languageId}`);
+    navigate(`/${languageId}/${courseId}`);
     return null;
   }
 
   const isCompleted =
-    completedDays[`${languageId}-month${monthId}-day${dayId}`];
+    completedDays[`${languageId}-${courseId}-month${monthId}-day${dayId}`];
 
   return (
     <div className="min-h-screen bg-linear-to-br from-slate-900 via-purple-900 to-slate-900">
@@ -46,9 +55,14 @@ export const DayPage = () => {
         dayNum={dayId!}
         monthTitle={currentMonth.title}
         isCompleted={isCompleted}
-        onBack={() => navigate(`/${languageId}/month/${monthId}`)}
+        onBack={() => navigate(`/${languageId}/${courseId}/month/${monthId}`)}
         onToggleComplete={() =>
-          toggleDayComplete(Number(monthId), Number(dayId), languageId)
+          toggleDayComplete(
+            Number(monthId),
+            Number(dayId),
+            languageId,
+            courseId
+          )
         }
       />
 

@@ -32,8 +32,8 @@ export const LanguageSelectionPage = () => {
         {/* Language Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
           {platformData.languages.map((language) => {
-            const hasContent = language.learningData.months.some(
-              (month) => month.days.length > 0
+            const hasContent = language.courses.some((course) =>
+              course.learningData.months.some((month) => month.days.length > 0)
             );
 
             return (
@@ -70,7 +70,7 @@ export const LanguageSelectionPage = () => {
                     <BookOpen className="w-4 h-4 text-blue-400" />
                     <span className="text-sm text-slate-300">
                       {hasContent
-                        ? `${language.learningData.months.length} modul`
+                        ? `${language.courses.length} kurs mavjud`
                         : "Tez orada"}
                     </span>
                   </div>

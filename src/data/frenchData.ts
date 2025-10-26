@@ -1,14 +1,6 @@
-import type { LanguageData, MonthData } from "../types/types";
+import type { LanguageData } from "../types/types";
 
 // Placeholder data for French - to be filled later
-const month1: MonthData = {
-  id: 1,
-  title: "Français Fondamental",
-  description: "Asosiy grammatika va so'z boyligi",
-  color: "from-indigo-500 to-purple-500",
-  days: [],
-};
-
 export const frenchData: LanguageData = {
   id: "french",
   name: "French",
@@ -16,7 +8,15 @@ export const frenchData: LanguageData = {
   icon: "🇫🇷",
   color: "from-indigo-500 to-purple-500",
   description: "Fransuz tilini professional darajada o'rganing",
-  learningData: {
-    months: [month1],
-  },
+  courses: [
+    {
+      id: "speaking",
+      name: "General Speaking",
+      description: "Kundalik suhbat va umumiy speaking",
+      icon: "💬",
+      color: "from-indigo-500 to-purple-500",
+      duration: "3 oy",
+      learningData: { months: [] },
+    },
+  ],
 };
