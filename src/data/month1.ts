@@ -1,6 +1,4 @@
 import type { MonthData, DayData } from "../types/types";
-import { extraMonth1Days } from "./month1_extra";
-import { moreMonth1Days } from "./month1_more";
 
 const day1: DayData = {
   id: 1,
@@ -886,10 +884,2739 @@ const day4: DayData = {
   },
 };
 
+// Day 5 — Comparatives & Superlatives
+const day5: DayData = {
+  id: 5,
+  vocabulary: [
+    {
+      word: "tall",
+      translation: "baland",
+      example: "He is tall.",
+      difficulty: "easy",
+    },
+    {
+      word: "taller",
+      translation: "balandroq",
+      example: "She is taller than me.",
+      difficulty: "easy",
+    },
+    {
+      word: "the tallest",
+      translation: "eng baland",
+      example: "Tom is the tallest in class.",
+      difficulty: "easy",
+    },
+    {
+      word: "fast",
+      translation: "tez",
+      example: "This car is fast.",
+      difficulty: "easy",
+    },
+    {
+      word: "faster",
+      translation: "tezroq",
+      example: "This bike is faster than that one.",
+      difficulty: "easy",
+    },
+    {
+      word: "the fastest",
+      translation: "eng tez",
+      example: "Usain is the fastest runner.",
+      difficulty: "easy",
+    },
+    {
+      word: "good",
+      translation: "yaxshi",
+      example: "This is a good book.",
+      difficulty: "easy",
+    },
+    {
+      word: "better",
+      translation: "yaxshiroq",
+      example: "This one is better.",
+      difficulty: "easy",
+    },
+    {
+      word: "the best",
+      translation: "eng yaxshi",
+      example: "This is the best choice.",
+      difficulty: "easy",
+    },
+    {
+      word: "than",
+      translation: "...dan",
+      example: "A is smaller than B.",
+      difficulty: "easy",
+    },
+  ],
+  grammar: {
+    topic: "Comparatives & Superlatives",
+    formulas: [
+      {
+        title: "Short adjectives (comp)",
+        structure: "adj + er + than",
+        examples: ["smaller than", "faster than"],
+      },
+      {
+        title: "Short adjectives (sup)",
+        structure: "the + adj + est",
+        examples: ["the smallest", "the fastest"],
+      },
+      {
+        title: "Long adjectives (comp)",
+        structure: "more + adj + than",
+        examples: ["more interesting than"],
+      },
+      {
+        title: "Long adjectives (sup)",
+        structure: "the most + adj",
+        examples: ["the most important"],
+      },
+      {
+        title: "Irregular",
+        structure: "good → better → the best; bad → worse → the worst",
+        examples: ["better than", "the best"],
+      },
+    ],
+    rules: [
+      "Short adjectives: oldiga -er/-est qo'shiladi",
+      "Long adjectives: more/most bilan",
+      "Irregular forms: good/bad farqli",
+    ],
+    exercises: [
+      {
+        question: "Math is ___ (interesting) than history.",
+        answer: "more interesting",
+        explanation: "Long adjective",
+      },
+      {
+        question: "Tom is ___ (tall) boy in class.",
+        answer: "the tallest",
+        explanation: "Superlative",
+      },
+      {
+        question: "This phone is ___ (good) than that one.",
+        answer: "better",
+        explanation: "Irregular",
+      },
+    ],
+  },
+  speaking: {
+    topic: "Making Comparisons",
+    phrases: [
+      { phrase: "X is bigger than Y", translation: "X Y dan kattaroq" },
+      {
+        phrase: "This is the best option",
+        translation: "Bu eng yaxshi tanlov",
+      },
+    ],
+    tasks: [
+      "Ikki mahsulotni taqqoslab 5 ta gap yozing",
+      "Do'stingiz bilan telefonlarni taqqoslab suhbat qiling",
+    ],
+  },
+  listening: {
+    youtubeVideos: [
+      {
+        title: "Comparatives & Superlatives",
+        url: "https://www.youtube.com/watch?v=zB8eTiG2QFw",
+      },
+      {
+        title: "Making Comparisons",
+        url: "https://www.youtube.com/watch?v=4dKmY2p_Bno",
+      },
+    ],
+    resources: ["BBC: Comparatives/Superlatives"],
+    exercises: ["Videodan iboralarni yozib oling", "Sup/comp ni aniqlang"],
+  },
+  homework: {
+    writing: "Mahsulotlar taqqosini yozing (8 ta gap)",
+    speaking: "2 daqiqa taqdimot",
+    vocabulary: "10 ta yangi sifatni ishlating",
+  },
+};
+
+// Day 6 — Quantifiers
+const day6: DayData = {
+  id: 6,
+  vocabulary: [
+    {
+      word: "much",
+      translation: "ko'p (hisobl.)",
+      example: "How much water?",
+      difficulty: "easy",
+    },
+    {
+      word: "many",
+      translation: "ko'p (hisob.)",
+      example: "How many books?",
+      difficulty: "easy",
+    },
+    {
+      word: "a lot of",
+      translation: "juda ko'p",
+      example: "a lot of friends",
+      difficulty: "easy",
+    },
+    {
+      word: "few",
+      translation: "kam (hisob.)",
+      example: "few options",
+      difficulty: "easy",
+    },
+    {
+      word: "little",
+      translation: "kam (hisobl.)",
+      example: "little time",
+      difficulty: "easy",
+    },
+    {
+      word: "some",
+      translation: "bir oz/ba'zi",
+      example: "some people",
+      difficulty: "easy",
+    },
+    {
+      word: "any",
+      translation: "hech qanday",
+      example: "any questions?",
+      difficulty: "easy",
+    },
+    {
+      word: "several",
+      translation: "bir nechta",
+      example: "several issues",
+      difficulty: "medium",
+    },
+    {
+      word: "plenty of",
+      translation: "yetarlicha ko'p",
+      example: "plenty of time",
+      difficulty: "medium",
+    },
+    {
+      word: "enough",
+      translation: "yetarli",
+      example: "enough money",
+      difficulty: "easy",
+    },
+  ],
+  grammar: {
+    topic: "Quantifiers",
+    formulas: [
+      {
+        title: "Countable",
+        structure: "many / few / several / a few",
+        examples: ["many books", "few cars"],
+      },
+      {
+        title: "Uncountable",
+        structure: "much / little / a little",
+        examples: ["much water", "little time"],
+      },
+      {
+        title: "Both",
+        structure: "a lot of / plenty of / some / any",
+        examples: ["a lot of ideas", "any problem"],
+      },
+    ],
+    rules: [
+      "Much uncountable bilan, many countable bilan",
+      "Any odatda inkor/savolda",
+    ],
+    exercises: [
+      {
+        question: "We have ___ (much/many) time.",
+        answer: "much",
+        explanation: "Uncountable",
+      },
+      {
+        question: "There are ___ (few/little) chairs.",
+        answer: "few",
+        explanation: "Countable",
+      },
+      {
+        question: "Do you have ___ questions?",
+        answer: "any",
+        explanation: "Questions - countable, savol",
+      },
+    ],
+  },
+  speaking: {
+    topic: "Talking about amounts",
+    phrases: [{ phrase: "We have enough", translation: "Bizda yetarli" }],
+    tasks: ["Do'konda miqdor haqida suhbat"],
+  },
+  listening: {
+    youtubeVideos: [
+      {
+        title: "Quantifiers",
+        url: "https://www.youtube.com/watch?v=8zEo5o6mPq4",
+      },
+    ],
+    resources: ["6 Minute English"],
+    exercises: ["Quantifiersni to'g'ri tanlang"],
+  },
+  homework: {
+    writing: "Miqdorlar bilan 8 gap",
+    speaking: "Sotib olish rejasini ayting",
+    vocabulary: "10 ta so'z bilan gaplar",
+  },
+};
+
+// Day 7 — Prepositions of time/place
+const day7: DayData = {
+  id: 7,
+  vocabulary: [
+    {
+      word: "in",
+      translation: "da (oy/yil)",
+      example: "in 2020",
+      difficulty: "easy",
+    },
+    {
+      word: "on",
+      translation: "da (kun/sana)",
+      example: "on Monday",
+      difficulty: "easy",
+    },
+    {
+      word: "at",
+      translation: "da (soat/joy)",
+      example: "at 7 / at home",
+      difficulty: "easy",
+    },
+    {
+      word: "between",
+      translation: "orasida",
+      example: "between A and B",
+      difficulty: "easy",
+    },
+    {
+      word: "among",
+      translation: "orasida (ko'p)",
+      example: "among friends",
+      difficulty: "medium",
+    },
+    {
+      word: "next to",
+      translation: "yonida",
+      example: "next to the bank",
+      difficulty: "easy",
+    },
+    {
+      word: "behind",
+      translation: "orqasida",
+      example: "behind the school",
+      difficulty: "easy",
+    },
+    {
+      word: "in front of",
+      translation: "oldida",
+      example: "in front of the house",
+      difficulty: "easy",
+    },
+    {
+      word: "above",
+      translation: "ustida (tepasida)",
+      example: "above the table",
+      difficulty: "medium",
+    },
+    {
+      word: "below",
+      translation: "pastida",
+      example: "below zero",
+      difficulty: "medium",
+    },
+  ],
+  grammar: {
+    topic: "Prepositions of time & place",
+    formulas: [
+      {
+        title: "Time",
+        structure: "in (months/years), on (days/dates), at (times)",
+        examples: ["in May", "on Friday", "at 7"],
+      },
+      {
+        title: "Place",
+        structure: "at (point), in (enclosed), on (surface)",
+        examples: ["at the door", "in the room", "on the wall"],
+      },
+    ],
+    rules: ["In/On/At vaqt uchun qoida", "At/in/on joy uchun qoida"],
+    exercises: [
+      {
+        question: "I was born ___ 1995.",
+        answer: "in",
+        explanation: "Year → in",
+      },
+      {
+        question: "The meeting is ___ Monday.",
+        answer: "on",
+        explanation: "Day → on",
+      },
+      { question: "See you ___ 7 pm.", answer: "at", explanation: "Time → at" },
+    ],
+  },
+  speaking: {
+    topic: "Giving directions",
+    phrases: [
+      {
+        phrase: "Go straight, then turn left",
+        translation: "To'g'ri boring, keyin chapga buriling",
+      },
+    ],
+    tasks: ["Shaharda yo'l ko'rsatish dialogi"],
+  },
+  listening: {
+    youtubeVideos: [
+      {
+        title: "Prepositions",
+        url: "https://www.youtube.com/watch?v=M6ZBvJkCzH4",
+      },
+    ],
+    resources: ["Oxford Prepositions"],
+    exercises: ["Bo'sh joylarni to'ldirish"],
+  },
+  homework: {
+    writing: "Manzilni tariflang",
+    speaking: "Yo'l ko'rsatish mashqi",
+    vocabulary: "10 ta predlog bilan gaplar",
+  },
+};
+
+// Day 8 — Articles
+const day8: DayData = {
+  id: 8,
+  vocabulary: [
+    {
+      word: "a",
+      translation: "bir (noaniq)",
+      example: "a book",
+      difficulty: "easy",
+    },
+    {
+      word: "an",
+      translation: "bir (unli)",
+      example: "an apple",
+      difficulty: "easy",
+    },
+    {
+      word: "the",
+      translation: "aniq artikl",
+      example: "the sun",
+      difficulty: "easy",
+    },
+    {
+      word: "zero article",
+      translation: "artiklsiz",
+      example: "I love music",
+      difficulty: "medium",
+    },
+    {
+      word: "unique",
+      translation: "yagona",
+      example: "the only way",
+      difficulty: "medium",
+    },
+    {
+      word: "specific",
+      translation: "aniq",
+      example: "the specific task",
+      difficulty: "medium",
+    },
+    {
+      word: "general",
+      translation: "umumiy",
+      example: "a student",
+      difficulty: "easy",
+    },
+    {
+      word: "context",
+      translation: "kontekst",
+      example: "depends on context",
+      difficulty: "medium",
+    },
+    {
+      word: "plural",
+      translation: "ko'plik",
+      example: "the students",
+      difficulty: "easy",
+    },
+    {
+      word: "uncountable",
+      translation: "hisoblanmaydi",
+      example: "water",
+      difficulty: "easy",
+    },
+  ],
+  grammar: {
+    topic: "Articles: a/an, the, zero",
+    formulas: [
+      {
+        title: "Indefinite",
+        structure: "a/an + singular countable",
+        examples: ["a car", "an hour"],
+      },
+      {
+        title: "Definite",
+        structure: "the + known/unique",
+        examples: ["the sun", "the manager we met"],
+      },
+      {
+        title: "Zero",
+        structure: "No article with plural/uncountable when speaking generally",
+        examples: ["I love music", "Students study hard"],
+      },
+    ],
+    rules: ["An unli tovushdan oldin", "The – oldindan ma'lum narsaga"],
+    exercises: [
+      {
+        question: "He is ___ engineer.",
+        answer: "an",
+        explanation: "Unli tovush",
+      },
+      {
+        question: "I saw ___ cat. ___ cat was black.",
+        answer: "a, The",
+        explanation: "Keyingi marta the",
+      },
+      {
+        question: "I like ___ music.",
+        answer: "-",
+        explanation: "Zero article",
+      },
+    ],
+  },
+  speaking: {
+    topic: "Describing objects",
+    phrases: [{ phrase: "This is a...", translation: "Bu ..." }],
+    tasks: ["Rasmdagi narsalarni tariflang"],
+  },
+  listening: {
+    youtubeVideos: [
+      { title: "Articles", url: "https://www.youtube.com/watch?v=Gq1X6r7yP3E" },
+    ],
+    resources: ["Cambridge: Articles"],
+    exercises: ["A/An/The ni tanlang"],
+  },
+  homework: {
+    writing: "Artikllar bilan 10 gap",
+    speaking: "Ob'ektlarni ta'riflash",
+    vocabulary: "10 so'z bilan gaplar",
+  },
+};
+
+// Day 9 — Pronouns
+const day9: DayData = {
+  id: 9,
+  vocabulary: [
+    {
+      word: "I/me",
+      translation: "men/meni",
+      example: "I know him. He knows me.",
+      difficulty: "easy",
+    },
+    {
+      word: "you/you",
+      translation: "sen/seni",
+      example: "I saw you.",
+      difficulty: "easy",
+    },
+    {
+      word: "he/him",
+      translation: "u/uni (erkak)",
+      example: "She likes him.",
+      difficulty: "easy",
+    },
+    {
+      word: "she/her",
+      translation: "u/uni (ayol)",
+      example: "I called her.",
+      difficulty: "easy",
+    },
+    {
+      word: "they/them",
+      translation: "ular/ularni",
+      example: "We met them.",
+      difficulty: "easy",
+    },
+    {
+      word: "we/us",
+      translation: "biz/bizni",
+      example: "They helped us.",
+      difficulty: "easy",
+    },
+    {
+      word: "mine",
+      translation: "meniki",
+      example: "This book is mine.",
+      difficulty: "easy",
+    },
+    {
+      word: "yours",
+      translation: "seniki",
+      example: "Is it yours?",
+      difficulty: "easy",
+    },
+    {
+      word: "his/hers",
+      translation: "unki",
+      example: "That's his.",
+      difficulty: "easy",
+    },
+    {
+      word: "theirs",
+      translation: "ularnikidir",
+      example: "The house is theirs.",
+      difficulty: "medium",
+    },
+  ],
+  grammar: {
+    topic: "Pronouns",
+    formulas: [
+      {
+        title: "Subject/Object",
+        structure: "I/me, you/you, he/him, ...",
+        examples: ["She likes him", "They helped us"],
+      },
+      {
+        title: "Possessive",
+        structure: "my, your, his, her, our, their; mine, yours, ...",
+        examples: ["This is my pen", "The pen is mine"],
+      },
+    ],
+    rules: [
+      "Subyekt va obyekt olmoshlarini farqlang",
+      "Possessive sifat vs olmosh",
+    ],
+    exercises: [
+      {
+        question: "Give the book to ___ (I/me).",
+        answer: "me",
+        explanation: "Object pronoun",
+      },
+      {
+        question: "Is this pen ___ (you/yours)?",
+        answer: "yours",
+        explanation: "Possessive pronoun",
+      },
+      {
+        question: "___ (They/Them) are my friends.",
+        answer: "They",
+        explanation: "Subject pronoun",
+      },
+    ],
+  },
+  speaking: {
+    topic: "Possession",
+    phrases: [{ phrase: "It is mine", translation: "Bu meniki" }],
+    tasks: ["Olmoshlarni to'g'ri ishlatib dialog tuzing"],
+  },
+  listening: {
+    youtubeVideos: [
+      { title: "Pronouns", url: "https://www.youtube.com/watch?v=5eXxC2D1o4k" },
+    ],
+    resources: ["Grammar Bytes"],
+    exercises: ["Olmoshlarni joylashtiring"],
+  },
+  homework: {
+    writing: "Olmoshlar bilan 10 gap",
+    speaking: "Rasmlarni ta'riflang",
+    vocabulary: "10 olmosh bilan misol",
+  },
+};
+
+// Day 10 — Present Perfect vs Past Simple (contrast)
+const day10: DayData = {
+  id: 10,
+  vocabulary: [
+    {
+      word: "just",
+      translation: "hozirgina",
+      example: "I have just finished.",
+      difficulty: "medium",
+    },
+    {
+      word: "already",
+      translation: "allaqachon",
+      example: "She has already left.",
+      difficulty: "medium",
+    },
+    {
+      word: "yet",
+      translation: "hali (inkor/savol)",
+      example: "Have you finished yet?",
+      difficulty: "medium",
+    },
+    {
+      word: "ever",
+      translation: "hech",
+      example: "Have you ever been to London?",
+      difficulty: "medium",
+    },
+    {
+      word: "never",
+      translation: "hech qachon",
+      example: "I have never tried sushi.",
+      difficulty: "medium",
+    },
+    {
+      word: "last",
+      translation: "o'tgan",
+      example: "last year",
+      difficulty: "easy",
+    },
+    {
+      word: "ago",
+      translation: "oldin",
+      example: "two years ago",
+      difficulty: "easy",
+    },
+    {
+      word: "for",
+      translation: "... davomida",
+      example: "for two years",
+      difficulty: "easy",
+    },
+    {
+      word: "since",
+      translation: "... dan beri",
+      example: "since 2020",
+      difficulty: "easy",
+    },
+    {
+      word: "recently",
+      translation: "yaqinda",
+      example: "I have recently moved.",
+      difficulty: "medium",
+    },
+  ],
+  grammar: {
+    topic: "Present Perfect vs Past Simple",
+    formulas: [
+      {
+        title: "Past Simple",
+        structure: "Subject + V2 + Object",
+        examples: ["I visited Rome in 2019"],
+      },
+      {
+        title: "Present Perfect",
+        structure: "Subject + have/has + V3 + Object",
+        examples: ["I have visited Rome twice"],
+      },
+    ],
+    rules: [
+      "Past Simple: aniq vaqt bilan (yesterday, in 2019, last week)",
+      "Present Perfect: aniq vaqt yo'q, tajriba/natija",
+      "For/since bilan PP; ago bilan Past Simple",
+    ],
+    exercises: [
+      {
+        question: "I ___ (see) him yesterday.",
+        answer: "saw",
+        explanation: "Yesterday → Past Simple",
+      },
+      {
+        question: "I ___ (be) to Paris three times.",
+        answer: "have been",
+        explanation: "Experience → Present Perfect",
+      },
+      {
+        question: "She ___ (live) here since 2020.",
+        answer: "has lived",
+        explanation: "Since → PP",
+      },
+    ],
+  },
+  speaking: {
+    topic: "Experiences",
+    phrases: [{ phrase: "I have never...", translation: "Men hech qachon..." }],
+    tasks: ["Tajriba haqida suhbat"],
+  },
+  listening: {
+    youtubeVideos: [
+      {
+        title: "Present Perfect vs Past Simple",
+        url: "https://www.youtube.com/watch?v=By0QdS1FJyg",
+      },
+    ],
+    resources: ["BBC: PP vs PS"],
+    exercises: ["To'g'ri zamonni tanlang"],
+  },
+  homework: {
+    writing: "Tajribangiz haqida yozing",
+    speaking: "3 daqiqa gapirish",
+    vocabulary: "Trigger so'zlar bilan 10 gap",
+  },
+};
+
+// Day 11 — Conditionals (Zero & First)
+const day11: DayData = {
+  id: 11,
+  vocabulary: [
+    {
+      word: "condition",
+      translation: "shart",
+      example: "This is an important condition.",
+      difficulty: "medium",
+    },
+    {
+      word: "result",
+      translation: "natija",
+      example: "The result is positive.",
+      difficulty: "easy",
+    },
+    {
+      word: "unless",
+      translation: "... bo'lmasa",
+      example: "Unless it rains, we'll go.",
+      difficulty: "medium",
+    },
+    {
+      word: "in case",
+      translation: "hollarda",
+      example: "Take an umbrella in case it rains.",
+      difficulty: "hard",
+    },
+    {
+      word: "provided",
+      translation: "agar",
+      example: "You can go provided you finish.",
+      difficulty: "hard",
+    },
+    {
+      word: "weather",
+      translation: "ob-havo",
+      example: "If the weather is fine, we'll travel.",
+      difficulty: "easy",
+    },
+  ],
+  grammar: {
+    topic: "Conditionals: Zero & First",
+    formulas: [
+      {
+        title: "Zero Conditional",
+        structure: "If + Present, Present",
+        examples: ["If water boils, it turns to steam."],
+      },
+      {
+        title: "First Conditional",
+        structure: "If + Present, will + V1",
+        examples: ["If it rains, I will stay home."],
+      },
+    ],
+    rules: [
+      "Zero: umumiy haqiqatlar",
+      "First: real kelajak shartlar",
+      "Unless ≈ if not",
+    ],
+    exercises: [
+      {
+        question: "If you heat ice, it ___ (melt).",
+        answer: "melts",
+        explanation: "Zero Conditional",
+      },
+      {
+        question: "If I see him, I ___ (call).",
+        answer: "will call",
+        explanation: "First Conditional",
+      },
+      {
+        question: "We won't go ___ it rains.",
+        answer: "unless",
+        explanation: "unless = if not",
+      },
+    ],
+  },
+  speaking: {
+    topic: "Talking about real conditions",
+    phrases: [
+      {
+        phrase: "If it rains, we'll...",
+        translation: "Yomg'ir yog'sa, biz ... qilamiz",
+      },
+      { phrase: "In case of...", translation: "... holatida" },
+    ],
+    tasks: [
+      "Reja haqida 5 ta shartli gap tuzing",
+      "Hamkor bilan shartlarni muhokama qiling",
+    ],
+  },
+  listening: {
+    youtubeVideos: [
+      {
+        title: "Zero & First Conditional",
+        url: "https://www.youtube.com/watch?v=HqVY9B3s5bA",
+      },
+    ],
+    resources: ["BBC Learning English: Conditionals"],
+    exercises: ["Videodan misollarni yozing"],
+  },
+  homework: {
+    writing: "Shartli gaplar bilan rejalaringizni yozing",
+    speaking: "2 daqiqalik shartli nutq",
+    vocabulary: "6 so'zni gaplarda ishlating",
+  },
+};
+
+// Day 12 — Second Conditional
+const day12: DayData = {
+  id: 12,
+  vocabulary: [
+    {
+      word: "imagine",
+      translation: "tasavvur qilmoq",
+      example: "Imagine you won a prize.",
+      difficulty: "easy",
+    },
+    {
+      word: "unlikely",
+      translation: "kam ehtimol",
+      example: "It's unlikely to happen.",
+      difficulty: "medium",
+    },
+    {
+      word: "would",
+      translation: "... bo'lar edi",
+      example: "I would travel more.",
+      difficulty: "easy",
+    },
+    {
+      word: "if I were",
+      translation: "agar men bo'lsam",
+      example: "If I were you, I'd study.",
+      difficulty: "medium",
+    },
+    {
+      word: "dream",
+      translation: "orzu",
+      example: "I would buy my dream car.",
+      difficulty: "easy",
+    },
+    {
+      word: "choice",
+      translation: "tanlov",
+      example: "What choice would you make?",
+      difficulty: "medium",
+    },
+  ],
+  grammar: {
+    topic: "Second Conditional",
+    formulas: [
+      {
+        title: "Second Conditional",
+        structure: "If + Past, would + V1",
+        examples: ["If I had time, I would help."],
+      },
+    ],
+    rules: [
+      "Haqiqiy emas holatlar",
+      "Were formal variant: If I were you",
+      "Would + V1 natija",
+    ],
+    exercises: [
+      {
+        question: "If I ___ (be) rich, I would travel.",
+        answer: "were",
+        explanation: "If I were...",
+      },
+      {
+        question: "She would help if she ___ (have) time.",
+        answer: "had",
+        explanation: "Past simple in if-clause",
+      },
+      {
+        question: "What would you do if you ___ (win) the lottery?",
+        answer: "won",
+        explanation: "Past form",
+      },
+    ],
+  },
+  speaking: {
+    topic: "Hypothetical situations",
+    phrases: [
+      {
+        phrase: "If I were you, I'd...",
+        translation: "Agar o'rningda bo'lsam, ... qilardim",
+      },
+      { phrase: "I would rather...", translation: "Yaxshisi ... qilardim" },
+    ],
+    tasks: ["Maslahat berish dialogi", "Orzu holatlari haqida suhbat"],
+  },
+  listening: {
+    youtubeVideos: [
+      {
+        title: "Second Conditional",
+        url: "https://www.youtube.com/watch?v=KJYGCkzY8Ys",
+      },
+    ],
+    resources: ["Perfect English Grammar: 2nd conditional"],
+    exercises: ["2nd conditional gaplarni to'ldiring"],
+  },
+  homework: {
+    writing: "Agar ... bo'lsa mavzusida 8 gap",
+    speaking: "Rol o'ynash: maslahat",
+    vocabulary: "6 so'zni ishlating",
+  },
+};
+
+// Days 13-30 continuing...
+// Due to length limitations, I'll add remaining days in more compact format
+
+const day13: DayData = {
+  id: 13,
+  vocabulary: [
+    {
+      word: "regret",
+      translation: "afsus",
+      example: "I regret the mistake.",
+      difficulty: "medium",
+    },
+    {
+      word: "past",
+      translation: "o'tmish",
+      example: "In the past, we worked a lot.",
+      difficulty: "easy",
+    },
+    {
+      word: "outcome",
+      translation: "natija",
+      example: "The outcome could have changed.",
+      difficulty: "hard",
+    },
+    {
+      word: "if only",
+      translation: "koshki",
+      example: "If only I had known.",
+      difficulty: "hard",
+    },
+    {
+      word: "hadn't",
+      translation: "qilmaganda",
+      example: "If he hadn't left...",
+      difficulty: "medium",
+    },
+    {
+      word: "would have",
+      translation: "bo'lgan bo'lardi",
+      example: "We would have won.",
+      difficulty: "medium",
+    },
+  ],
+  grammar: {
+    topic: "Third & Mixed Conditionals",
+    formulas: [
+      {
+        title: "Third",
+        structure: "If + had + V3, would have + V3",
+        examples: ["If I had studied, I would have passed."],
+      },
+      {
+        title: "Mixed",
+        structure: "If + had + V3, would + V1 (now)",
+        examples: ["If I had slept more, I would feel better now."],
+      },
+    ],
+    rules: [
+      "Third: o'tmishdagi afsuslanish",
+      "Mixed: o'tmish sababi – hozirgi natija",
+      "Had I known... inversiya",
+    ],
+    exercises: [
+      {
+        question: "If she had left earlier, she ___ (catch) the train.",
+        answer: "would have caught",
+        explanation: "Third",
+      },
+      {
+        question: "If I had eaten, I ___ (not be) hungry now.",
+        answer: "wouldn't be",
+        explanation: "Mixed",
+      },
+      {
+        question: "Had I known, I ___ (call) you.",
+        answer: "would have called",
+        explanation: "Inversiya",
+      },
+    ],
+  },
+  speaking: {
+    topic: "Regrets & alternatives",
+    phrases: [
+      { phrase: "If only I had...", translation: "Koshki ... qilganimda" },
+      { phrase: "I would have...", translation: "... qilgan bo'lardim" },
+    ],
+    tasks: ["O'tmish holatlarini muhokama qiling"],
+  },
+  listening: {
+    youtubeVideos: [
+      {
+        title: "Third Conditional",
+        url: "https://www.youtube.com/watch?v=Kz4x9Yt6j6A",
+      },
+    ],
+    resources: ["Grammar: third conditional"],
+    exercises: ["Third/mixed gap-fill"],
+  },
+  homework: {
+    writing: "O'tmishdagi 5 afsus",
+    speaking: "Alternativ natijalar",
+    vocabulary: "6 so'z bilan gaplar",
+  },
+};
+
+const day14: DayData = {
+  id: 14,
+  vocabulary: [
+    {
+      word: "by",
+      translation: "tomonidan",
+      example: "The book was written by her.",
+      difficulty: "easy",
+    },
+    {
+      word: "produce",
+      translation: "ishlab chiqarmoq",
+      example: "Cars are produced here.",
+      difficulty: "medium",
+    },
+    {
+      word: "build",
+      translation: "qurmoq",
+      example: "The bridge was built in 2010.",
+      difficulty: "easy",
+    },
+    {
+      word: "deliver",
+      translation: "yetkazmoq",
+      example: "The items are delivered daily.",
+      difficulty: "medium",
+    },
+    {
+      word: "invent",
+      translation: "ixtiro qilmoq",
+      example: "The phone was invented...",
+      difficulty: "medium",
+    },
+    {
+      word: "made",
+      translation: "yasalgan",
+      example: "It is made of wood.",
+      difficulty: "easy",
+    },
+  ],
+  grammar: {
+    topic: "Passive Voice: Basics",
+    formulas: [
+      {
+        title: "Present Simple Passive",
+        structure: "am/is/are + V3",
+        examples: ["It is done."],
+      },
+      {
+        title: "Past Simple Passive",
+        structure: "was/were + V3",
+        examples: ["It was done."],
+      },
+    ],
+    rules: ["Agent 'by' bilan", "Obyekt muhim", "Tense moslashadi"],
+    exercises: [
+      {
+        question: "The report ___ (write) yesterday.",
+        answer: "was written",
+        explanation: "Past passive",
+      },
+      {
+        question: "Cars ___ (make) in this factory.",
+        answer: "are made",
+        explanation: "Present passive",
+      },
+      {
+        question: "The email ___ (send).",
+        answer: "has been sent",
+        explanation: "Present perfect passive",
+      },
+    ],
+  },
+  speaking: {
+    topic: "Processes",
+    phrases: [{ phrase: "It is made of...", translation: "U ...dan yasalgan" }],
+    tasks: ["Jarayonni tasvirlash"],
+  },
+  listening: {
+    youtubeVideos: [
+      {
+        title: "Passive Voice",
+        url: "https://www.youtube.com/watch?v=_2S17Z1r3g8",
+      },
+    ],
+    resources: ["BBC Passive"],
+    exercises: ["Active → Passive o'zgartiring"],
+  },
+  homework: {
+    writing: "Ishlab chiqarish jarayonini yozing",
+    speaking: "Jarayonni tushuntirish",
+    vocabulary: "6 so'z bilan gaplar",
+  },
+};
+
+const day15: DayData = {
+  id: 15,
+  vocabulary: [
+    {
+      word: "service",
+      translation: "xizmat",
+      example: "Service is provided.",
+      difficulty: "easy",
+    },
+    {
+      word: "announce",
+      translation: "e'lon qilmoq",
+      example: "It was announced yesterday.",
+      difficulty: "medium",
+    },
+    {
+      word: "expect",
+      translation: "kutilmoq",
+      example: "The product is expected soon.",
+      difficulty: "medium",
+    },
+    {
+      word: "require",
+      translation: "talab qilmoq",
+      example: "Experience is required.",
+      difficulty: "medium",
+    },
+    {
+      word: "allow",
+      translation: "ruxsat bermoq",
+      example: "Visitors are not allowed.",
+      difficulty: "easy",
+    },
+    {
+      word: "pay",
+      translation: "to'lamoq",
+      example: "He was paid well.",
+      difficulty: "easy",
+    },
+  ],
+  grammar: {
+    topic: "Passive Voice: Tenses",
+    formulas: [
+      {
+        title: "Present Perfect Passive",
+        structure: "has/have been + V3",
+        examples: ["It has been done."],
+      },
+      {
+        title: "Future Passive",
+        structure: "will be + V3",
+        examples: ["It will be done."],
+      },
+    ],
+    rules: ["Tense combinationlari", "Agent ko'pincha tushiriladi"],
+    exercises: [
+      {
+        question: "The work ___ (complete) by Friday.",
+        answer: "will be completed",
+        explanation: "Future passive",
+      },
+      {
+        question: "The task ___ (already/finish).",
+        answer: "has already been finished",
+        explanation: "Present perfect passive",
+      },
+      {
+        question: "Rules ___ (not/allow) here.",
+        answer: "are not allowed",
+        explanation: "Present passive negative",
+      },
+    ],
+  },
+  speaking: {
+    topic: "Company policies",
+    phrases: [
+      {
+        phrase: "It will be done by...",
+        translation: "... tomonidan bajariladi",
+      },
+    ],
+    tasks: ["Siyosatlarni tushuntirish"],
+  },
+  listening: {
+    youtubeVideos: [
+      {
+        title: "Passive Tenses",
+        url: "https://www.youtube.com/watch?v=0Qv3xb8R9qk",
+      },
+    ],
+    resources: ["EngVid Passive"],
+    exercises: ["Passive turlarini moslang"],
+  },
+  homework: {
+    writing: "Qoidalarni passive bilan yozing",
+    speaking: "E'lon qilish mashqi",
+    vocabulary: "6 so'z bilan gaplar",
+  },
+};
+
+const day16: DayData = {
+  id: 16,
+  vocabulary: [
+    {
+      word: "say",
+      translation: "aytmoq",
+      example: "He said that...",
+      difficulty: "easy",
+    },
+    {
+      word: "tell",
+      translation: "aytmoq (kimlargadir)",
+      example: "She told me...",
+      difficulty: "easy",
+    },
+    {
+      word: "report",
+      translation: "hisobot",
+      example: "They reported the news.",
+      difficulty: "medium",
+    },
+    {
+      word: "claim",
+      translation: "da'vo qilmoq",
+      example: "She claimed that...",
+      difficulty: "hard",
+    },
+    {
+      word: "explain",
+      translation: "tushuntirmoq",
+      example: "He explained that...",
+      difficulty: "medium",
+    },
+    {
+      word: "mention",
+      translation: "tilga olmoq",
+      example: "She mentioned that...",
+      difficulty: "medium",
+    },
+  ],
+  grammar: {
+    topic: "Reported Speech: Statements",
+    formulas: [
+      {
+        title: "Backshift",
+        structure: "Present → Past, will → would, can → could",
+        examples: ["He said he was busy."],
+      },
+      {
+        title: "That-clause",
+        structure: "say/tell + that + clause",
+        examples: ["She told me that she was late."],
+      },
+    ],
+    rules: [
+      "Zamon orqaga suriladi",
+      "Tell + object",
+      "Time expressions o'zgaradi",
+    ],
+    exercises: [
+      {
+        question: '"I am tired" → He said he ___ tired.',
+        answer: "was",
+        explanation: "Backshift",
+      },
+      {
+        question: '"I will call" → She said she ___ call.',
+        answer: "would",
+        explanation: "will → would",
+      },
+      {
+        question: '"I can help" → He said he ___ help.',
+        answer: "could",
+        explanation: "can → could",
+      },
+    ],
+  },
+  speaking: {
+    topic: "Reporting news",
+    phrases: [{ phrase: "He said that...", translation: "U shuni aytdiki..." }],
+    tasks: ["Qisqa yangiliklarni qayta aytish"],
+  },
+  listening: {
+    youtubeVideos: [
+      {
+        title: "Reported Speech",
+        url: "https://www.youtube.com/watch?v=9cP9e2dD0eA",
+      },
+    ],
+    resources: ["BBC Reported Speech"],
+    exercises: ["Direct → reported"],
+  },
+  homework: {
+    writing: "Yangilikni reported speech bilan yozing",
+    speaking: "Hikoya qilish",
+    vocabulary: "6 so'z bilan gaplar",
+  },
+};
+
+const day17: DayData = {
+  id: 17,
+  vocabulary: [
+    {
+      word: "ask",
+      translation: "so'ramoq",
+      example: "He asked where I lived.",
+      difficulty: "easy",
+    },
+    {
+      word: "order",
+      translation: "buyruq",
+      example: "She ordered him to wait.",
+      difficulty: "medium",
+    },
+    {
+      word: "request",
+      translation: "iltimos",
+      example: "They requested us to stay.",
+      difficulty: "medium",
+    },
+    {
+      word: "advise",
+      translation: "maslahat bermoq",
+      example: "He advised me to rest.",
+      difficulty: "medium",
+    },
+    {
+      word: "instruct",
+      translation: "yo'riq bermoq",
+      example: "She instructed me to call.",
+      difficulty: "hard",
+    },
+    {
+      word: "wonder",
+      translation: "bilishni istamoq",
+      example: "I wondered if...",
+      difficulty: "medium",
+    },
+  ],
+  grammar: {
+    topic: "Reported Speech: Questions & Commands",
+    formulas: [
+      {
+        title: "Wh-questions",
+        structure: "asked + wh-word + clause",
+        examples: ["He asked where I lived."],
+      },
+      {
+        title: "Yes/No",
+        structure: "asked if/whether + clause",
+        examples: ["She asked if I was fine."],
+      },
+      {
+        title: "Commands",
+        structure: "told/asked + object + to V1",
+        examples: ["He told me to wait."],
+      },
+    ],
+    rules: ["If/whether yes-no uchun", "To-infinitive buyruqlar uchun"],
+    exercises: [
+      {
+        question: "Where do you live? → He asked where I ___.",
+        answer: "lived",
+        explanation: "Backshift",
+      },
+      {
+        question: '"Wait!" → He told me ___ wait.',
+        answer: "to",
+        explanation: "to + V1",
+      },
+      {
+        question: "Are you OK? → She asked if I ___ OK.",
+        answer: "was",
+        explanation: "if/whether",
+      },
+    ],
+  },
+  speaking: {
+    topic: "Asking & telling",
+    phrases: [
+      {
+        phrase: "He asked me to...",
+        translation: "U mendan ... qilishni so'radi",
+      },
+    ],
+    tasks: ["Intervyuni qayta hikoya qilish"],
+  },
+  listening: {
+    youtubeVideos: [
+      {
+        title: "Reported Questions",
+        url: "https://www.youtube.com/watch?v=TSc1b7m3QnA",
+      },
+    ],
+    resources: ["Engvid Reported Questions"],
+    exercises: ["Questions/commands ni reported qiling"],
+  },
+  homework: {
+    writing: "3 savolni reported qilib yozing",
+    speaking: "Dialogni qayta hikoya qiling",
+    vocabulary: "6 so'z bilan gaplar",
+  },
+};
+
+const day18: DayData = {
+  id: 18,
+  vocabulary: [
+    {
+      word: "must",
+      translation: "kerak",
+      example: "You must wear a helmet.",
+      difficulty: "easy",
+    },
+    {
+      word: "have to",
+      translation: "majbur",
+      example: "I have to work.",
+      difficulty: "easy",
+    },
+    {
+      word: "should",
+      translation: "kerak (maslahat)",
+      example: "You should rest.",
+      difficulty: "easy",
+    },
+    {
+      word: "ought to",
+      translation: "kerak (m.)",
+      example: "You ought to study.",
+      difficulty: "medium",
+    },
+    {
+      word: "prohibit",
+      translation: "taqiqlamoq",
+      example: "Smoking is prohibited.",
+      difficulty: "medium",
+    },
+    {
+      word: "permit",
+      translation: "ruxsat bermoq",
+      example: "Parking is permitted.",
+      difficulty: "medium",
+    },
+  ],
+  grammar: {
+    topic: "Modals: Obligation & Advice",
+    formulas: [
+      {
+        title: "Must/Have to",
+        structure: "Subject + must/have to + V1",
+        examples: ["You must go.", "I have to leave."],
+      },
+      {
+        title: "Should/Ought to",
+        structure: "Subject + should/ought to + V1",
+        examples: ["You should try."],
+      },
+    ],
+    rules: ["Must – ichki/yuridik majburiyat", "Should – maslahat"],
+    exercises: [
+      {
+        question: "You ___ (not) smoke here.",
+        answer: "mustn't",
+        explanation: "Prohibition",
+      },
+      {
+        question: "You ___ see a doctor.",
+        answer: "should",
+        explanation: "Advice",
+      },
+      {
+        question: "I ___ work late today.",
+        answer: "have to",
+        explanation: "External obligation",
+      },
+    ],
+  },
+  speaking: {
+    topic: "Rules & advice",
+    phrases: [
+      { phrase: "You should...", translation: "Siz ... qilishingiz kerak" },
+    ],
+    tasks: ["Qoidalar haqida suhbat"],
+  },
+  listening: {
+    youtubeVideos: [
+      {
+        title: "Should/Must",
+        url: "https://www.youtube.com/watch?v=6sVj0gQx9xU",
+      },
+    ],
+    resources: ["Modal verbs overview"],
+    exercises: ["Modalni tanlang"],
+  },
+  homework: {
+    writing: "Qoidalar ro'yxati",
+    speaking: "Maslahat bering",
+    vocabulary: "6 so'z bilan gaplar",
+  },
+};
+
+const day19: DayData = {
+  id: 19,
+  vocabulary: [
+    {
+      word: "give up",
+      translation: "taslim bo'lmoq",
+      example: "Don't give up.",
+      difficulty: "easy",
+    },
+    {
+      word: "look after",
+      translation: "g'amxo'rlik qilmoq",
+      example: "She looks after her sister.",
+      difficulty: "medium",
+    },
+    {
+      word: "turn on",
+      translation: "yoqmoq",
+      example: "Turn on the TV.",
+      difficulty: "easy",
+    },
+    {
+      word: "turn off",
+      translation: "o'chirmoq",
+      example: "Turn off the lights.",
+      difficulty: "easy",
+    },
+    {
+      word: "pick up",
+      translation: "olib ketmoq",
+      example: "I'll pick you up.",
+      difficulty: "easy",
+    },
+    {
+      word: "run out of",
+      translation: "tugamoq",
+      example: "We ran out of milk.",
+      difficulty: "medium",
+    },
+  ],
+  grammar: {
+    topic: "Phrasal Verbs 1",
+    formulas: [
+      {
+        title: "Pattern",
+        structure: "verb + particle",
+        examples: ["give up", "look after"],
+      },
+    ],
+    rules: ["Ma'nolari ko'pincha idiomatik", "Obyekt o'rni o'zgarishi mumkin"],
+    exercises: [
+      {
+        question: "We ___ (finish) milk.",
+        answer: "ran out of",
+        explanation: "Phrasal verb",
+      },
+      {
+        question: "Please ___ the TV.",
+        answer: "turn off",
+        explanation: "Phrasal verb",
+      },
+      {
+        question: "She ___ her brother.",
+        answer: "looks after",
+        explanation: "Phrasal verb",
+      },
+    ],
+  },
+  speaking: {
+    topic: "Daily actions",
+    phrases: [
+      {
+        phrase: "Could you turn on...",
+        translation: "... yoqib bera olasizmi",
+      },
+    ],
+    tasks: ["Uy ishlarini muhokama qilish"],
+  },
+  listening: {
+    youtubeVideos: [
+      {
+        title: "Common Phrasal Verbs",
+        url: "https://www.youtube.com/watch?v=V4Hn0nKpQ9M",
+      },
+    ],
+    resources: ["List of phrasal verbs"],
+    exercises: ["Phrasalni moslang"],
+  },
+  homework: {
+    writing: "Phrasal verbs bilan 8 gap",
+    speaking: "Vaziyatli suhbat",
+    vocabulary: "6 ibora bilan misol",
+  },
+};
+
+const day20: DayData = {
+  id: 20,
+  vocabulary: [
+    {
+      word: "put off",
+      translation: "kechiktirmoq",
+      example: "Don't put it off.",
+      difficulty: "medium",
+    },
+    {
+      word: "figure out",
+      translation: "tushunib yetmoq",
+      example: "We figured it out.",
+      difficulty: "medium",
+    },
+    {
+      word: "carry on",
+      translation: "davom etmoq",
+      example: "Carry on working.",
+      difficulty: "easy",
+    },
+    {
+      word: "set up",
+      translation: "yo'lga qo'ymoq",
+      example: "We set up a meeting.",
+      difficulty: "medium",
+    },
+    {
+      word: "look forward to",
+      translation: "intiqlik bilan kutmoq",
+      example: "I look forward to it.",
+      difficulty: "easy",
+    },
+    {
+      word: "work out",
+      translation: "yechim topmoq",
+      example: "We'll work it out.",
+      difficulty: "medium",
+    },
+  ],
+  grammar: {
+    topic: "Phrasal Verbs 2",
+    formulas: [
+      {
+        title: "Pattern",
+        structure: "verb + particle (2)",
+        examples: ["put off", "figure out"],
+      },
+    ],
+    rules: ["Ko'p so'zanli phrasallar", "Ingliz tilida juda keng tarqalgan"],
+    exercises: [
+      {
+        question: "Let's ___ (arrange) a meeting.",
+        answer: "set up",
+        explanation: "Phrasal",
+      },
+      {
+        question: "I ___ to seeing you.",
+        answer: "look forward",
+        explanation: "Phrasal",
+      },
+      {
+        question: "We will ___ the problem.",
+        answer: "work out",
+        explanation: "Phrasal",
+      },
+    ],
+  },
+  speaking: {
+    topic: "Planning",
+    phrases: [
+      { phrase: "Let's set up...", translation: "Keling ... tashkil qilaylik" },
+    ],
+    tasks: ["Ish rejalashtirish suhbatlari"],
+  },
+  listening: {
+    youtubeVideos: [
+      {
+        title: "Phrasal Verbs List",
+        url: "https://www.youtube.com/watch?v=tZ1z7kYbd7E",
+      },
+    ],
+    resources: ["Phrasal verbs practice"],
+    exercises: ["Moslash va gap to'ldirish"],
+  },
+  homework: {
+    writing: "Ish rejasi matni",
+    speaking: "Phrasal bilan dialog",
+    vocabulary: "6 phrasal bilan gaplar",
+  },
+};
+
+const day21: DayData = {
+  id: 21,
+  vocabulary: [
+    {
+      word: "always",
+      translation: "har doim",
+      example: "She always smiles.",
+      difficulty: "easy",
+    },
+    {
+      word: "usually",
+      translation: "odatda",
+      example: "We usually eat at 7.",
+      difficulty: "easy",
+    },
+    {
+      word: "often",
+      translation: "ko'pincha",
+      example: "He often travels.",
+      difficulty: "easy",
+    },
+    {
+      word: "rarely",
+      translation: "kamdan-kam",
+      example: "I rarely watch TV.",
+      difficulty: "medium",
+    },
+    {
+      word: "carefully",
+      translation: "ehtiyotkorlik bilan",
+      example: "Drive carefully.",
+      difficulty: "easy",
+    },
+    {
+      word: "quickly",
+      translation: "tez",
+      example: "He solved it quickly.",
+      difficulty: "easy",
+    },
+  ],
+  grammar: {
+    topic: "Adverbs of Frequency & Manner",
+    formulas: [
+      {
+        title: "Frequency",
+        structure: "always/usually/often/sometimes/rarely/never",
+        examples: ["I often read."],
+      },
+      {
+        title: "Manner",
+        structure: "adj + ly",
+        examples: ["She sings beautifully."],
+      },
+    ],
+    rules: [
+      "Frequency adverbs odatda asosiy fe'l oldida",
+      "Never inkor ma'no beradi",
+    ],
+    exercises: [
+      {
+        question: "He ___ (often) goes to the gym.",
+        answer: "often",
+        explanation: "Placement",
+      },
+      {
+        question: "Speak ___ (careful).",
+        answer: "carefully",
+        explanation: "-ly",
+      },
+      {
+        question: "She ___ (never) eats meat.",
+        answer: "never",
+        explanation: "Frequency",
+      },
+    ],
+  },
+  speaking: {
+    topic: "Daily routines",
+    phrases: [{ phrase: "I usually...", translation: "Men odatda..." }],
+    tasks: ["Kundalik odatlar haqida suhbat"],
+  },
+  listening: {
+    youtubeVideos: [
+      { title: "Adverbs", url: "https://www.youtube.com/watch?v=y5f0k-8Q8xM" },
+    ],
+    resources: ["Adverbs practice"],
+    exercises: ["Bo'sh joylarni to'ldirish"],
+  },
+  homework: {
+    writing: "Kun tartibingiz",
+    speaking: "Odatlar haqida gapiring",
+    vocabulary: "6 adverb bilan gaplar",
+  },
+};
+
+const day22: DayData = {
+  id: 22,
+  vocabulary: [
+    {
+      word: "who",
+      translation: "kim",
+      example: "The person who helped me.",
+      difficulty: "easy",
+    },
+    {
+      word: "which",
+      translation: "qaysi",
+      example: "The book which I bought.",
+      difficulty: "easy",
+    },
+    {
+      word: "that",
+      translation: "shu/ki",
+      example: "The car that I drive.",
+      difficulty: "easy",
+    },
+    {
+      word: "where",
+      translation: "qayerda",
+      example: "The place where I live.",
+      difficulty: "easy",
+    },
+    {
+      word: "whose",
+      translation: "kimning",
+      example: "The girl whose bag...",
+      difficulty: "medium",
+    },
+    {
+      word: "non-defining",
+      translation: "qo'shimcha",
+      example: "My sister, who lives in Tashkent, ...",
+      difficulty: "hard",
+    },
+  ],
+  grammar: {
+    topic: "Relative Clauses",
+    formulas: [
+      {
+        title: "Defining",
+        structure: "N + who/which/that + clause",
+        examples: ["The man who called..."],
+      },
+      {
+        title: "Non-defining",
+        structure: ", who/which ,",
+        examples: ["My car, which is new, ..."],
+      },
+    ],
+    rules: ["That faqat definingda", "Non-defining vergul bilan"],
+    exercises: [
+      {
+        question: "The man ___ called is my boss.",
+        answer: "who",
+        explanation: "Defining",
+      },
+      {
+        question: "My phone, ___ is new, is fast.",
+        answer: "which",
+        explanation: "Non-defining",
+      },
+      {
+        question: "The place ___ I live is quiet.",
+        answer: "where",
+        explanation: "Relative adverb",
+      },
+    ],
+  },
+  speaking: {
+    topic: "Describing people/places",
+    phrases: [{ phrase: "The person who...", translation: "... qilgan odam" }],
+    tasks: ["Ta'riflash mashqi"],
+  },
+  listening: {
+    youtubeVideos: [
+      {
+        title: "Relative Clauses",
+        url: "https://www.youtube.com/watch?v=MZfI0rF4H54",
+      },
+    ],
+    resources: ["Relative clauses guide"],
+    exercises: ["Which/who/that tanlash"],
+  },
+  homework: {
+    writing: "Odam/joylarni tasvirlash",
+    speaking: "Rasmlar asosida gapirish",
+    vocabulary: "6 so'z bilan gaplar",
+  },
+};
+
+const day23: DayData = {
+  id: 23,
+  vocabulary: [
+    {
+      word: "recently",
+      translation: "yaqinda",
+      example: "I have been studying recently.",
+      difficulty: "medium",
+    },
+    {
+      word: "since",
+      translation: "... dan beri",
+      example: "since morning",
+      difficulty: "easy",
+    },
+    {
+      word: "for",
+      translation: "... davomida",
+      example: "for two hours",
+      difficulty: "easy",
+    },
+    {
+      word: "temporary",
+      translation: "vaqtinchalik",
+      example: "temporary job",
+      difficulty: "medium",
+    },
+    {
+      word: "ongoing",
+      translation: "davom etayotgan",
+      example: "ongoing project",
+      difficulty: "hard",
+    },
+    {
+      word: "evidence",
+      translation: "dalil",
+      example: "There's evidence of progress.",
+      difficulty: "hard",
+    },
+  ],
+  grammar: {
+    topic: "Present Perfect Continuous: Review",
+    formulas: [
+      {
+        title: "PPC",
+        structure: "have/has been + V-ing",
+        examples: ["I have been working all day"],
+      },
+    ],
+    rules: ["Davomiylik, yaqinda tugagan harakat", "For/since bilan"],
+    exercises: [
+      {
+        question: "She ___ (study) since 9.",
+        answer: "has been studying",
+        explanation: "PPC",
+      },
+      {
+        question: "I ___ (work) all morning.",
+        answer: "have been working",
+        explanation: "PPC",
+      },
+      {
+        question: "They ___ (not/sleep).",
+        answer: "haven't been sleeping",
+        explanation: "Negation",
+      },
+    ],
+  },
+  speaking: {
+    topic: "Progress updates",
+    phrases: [
+      {
+        phrase: "I've been working on...",
+        translation: "Men ... ustida ishlayapman",
+      },
+    ],
+    tasks: ["Loyiha holatini muhokama qilish"],
+  },
+  listening: {
+    youtubeVideos: [
+      {
+        title: "Present Perfect Continuous",
+        url: "https://www.youtube.com/watch?v=0o8f7m4N6qk",
+      },
+    ],
+    resources: ["Continuous review"],
+    exercises: ["PPC gap to'ldirish"],
+  },
+  homework: {
+    writing: "Faoliyatingiz haqida yozing",
+    speaking: "Holatni tushuntirish",
+    vocabulary: "6 so'z bilan gaplar",
+  },
+};
+
+const day24: DayData = {
+  id: 24,
+  vocabulary: [
+    {
+      word: "already",
+      translation: "allaqachon",
+      example: "He had already left.",
+      difficulty: "medium",
+    },
+    {
+      word: "before",
+      translation: "...dan oldin",
+      example: "before I arrived",
+      difficulty: "easy",
+    },
+    {
+      word: "by the time",
+      translation: "... vaqtga kelib",
+      example: "by the time we came",
+      difficulty: "hard",
+    },
+    {
+      word: "sequence",
+      translation: "ketma-ketlik",
+      example: "Event sequence",
+      difficulty: "medium",
+    },
+    {
+      word: "prior",
+      translation: "oldingi",
+      example: "prior experience",
+      difficulty: "hard",
+    },
+    {
+      word: "earlier",
+      translation: "ilgari",
+      example: "earlier meeting",
+      difficulty: "easy",
+    },
+  ],
+  grammar: {
+    topic: "Past Perfect",
+    formulas: [
+      {
+        title: "Past Perfect",
+        structure: "had + V3",
+        examples: ["I had finished before he came"],
+      },
+    ],
+    rules: ["O'tmishda birinchi bo'lgan harakat", "By the time ... had + V3"],
+    exercises: [
+      {
+        question: "By the time we arrived, he ___ (leave).",
+        answer: "had left",
+        explanation: "PP",
+      },
+      {
+        question: "She ___ (finish) before 6.",
+        answer: "had finished",
+        explanation: "PP",
+      },
+      {
+        question: "They ___ (not/eat).",
+        answer: "hadn't eaten",
+        explanation: "Negation",
+      },
+    ],
+  },
+  speaking: {
+    topic: "Narratives",
+    phrases: [{ phrase: "By the time...", translation: "... paytga kelib" }],
+    tasks: ["Hikoya qilish"],
+  },
+  listening: {
+    youtubeVideos: [
+      {
+        title: "Past Perfect",
+        url: "https://www.youtube.com/watch?v=Gf2c1jT0Kz4",
+      },
+    ],
+    resources: ["Perfect tenses"],
+    exercises: ["Past Perfect to'ldirish"],
+  },
+  homework: {
+    writing: "Hikoya yozing",
+    speaking: "Vaqt chizig'i bilan tushuntiring",
+    vocabulary: "6 so'z bilan gaplar",
+  },
+};
+
+const day25: DayData = {
+  id: 25,
+  vocabulary: [
+    {
+      word: "by",
+      translation: "...gacha",
+      example: "by next year",
+      difficulty: "easy",
+    },
+    {
+      word: "deadline",
+      translation: "muddat",
+      example: "by the deadline",
+      difficulty: "medium",
+    },
+    {
+      word: "duration",
+      translation: "davomiylik",
+      example: "for two months",
+      difficulty: "hard",
+    },
+    {
+      word: "forecast",
+      translation: "bashorat",
+      example: "forecast the result",
+      difficulty: "hard",
+    },
+    {
+      word: "estimate",
+      translation: "taxmin qilmoq",
+      example: "estimate time",
+      difficulty: "medium",
+    },
+    {
+      word: "progress",
+      translation: "rivojlanish",
+      example: "progress by then",
+      difficulty: "easy",
+    },
+  ],
+  grammar: {
+    topic: "Future Perfect & Future Perfect Continuous",
+    formulas: [
+      {
+        title: "Future Perfect",
+        structure: "will have + V3",
+        examples: ["I will have finished by 6."],
+      },
+      {
+        title: "Future Perfect Continuous",
+        structure: "will have been + V-ing",
+        examples: ["I will have been working for 2 hours by 6."],
+      },
+    ],
+    rules: [
+      "Future Perfect – tugallanish nuqtasi",
+      "FP Continuous – davomiylik nuqtasi",
+    ],
+    exercises: [
+      {
+        question: "By 2026 I ___ (finish) university.",
+        answer: "will have finished",
+        explanation: "FP",
+      },
+      {
+        question: "By 6 pm we ___ (work) for 8 hours.",
+        answer: "will have been working",
+        explanation: "FPC",
+      },
+      {
+        question: "They ___ (not/complete) it by Friday.",
+        answer: "will not have completed",
+        explanation: "FP neg",
+      },
+    ],
+  },
+  speaking: {
+    topic: "Long-term planning",
+    phrases: [{ phrase: "By the time...", translation: "... paytga qadar" }],
+    tasks: ["Reja va muddat"],
+  },
+  listening: {
+    youtubeVideos: [
+      {
+        title: "Future Perfect",
+        url: "https://www.youtube.com/watch?v=4M9S9mF8YtU",
+      },
+    ],
+    resources: ["Perfect tenses"],
+    exercises: ["FP/FPC mashqlari"],
+  },
+  homework: {
+    writing: "Uzoq muddatli maqsadlar",
+    speaking: "Rejalar haqida gapiring",
+    vocabulary: "6 so'z bilan gaplar",
+  },
+};
+
+const day26: DayData = {
+  id: 26,
+  vocabulary: [
+    {
+      word: "ingredient",
+      translation: "mahsulot",
+      example: "The ingredient list.",
+      difficulty: "medium",
+    },
+    {
+      word: "portion",
+      translation: "porsiya",
+      example: "A large portion.",
+      difficulty: "easy",
+    },
+    {
+      word: "recipe",
+      translation: "retsept",
+      example: "A simple recipe.",
+      difficulty: "medium",
+    },
+    {
+      word: "spice",
+      translation: "ziravor",
+      example: "Add some spice.",
+      difficulty: "easy",
+    },
+    {
+      word: "dairy",
+      translation: "sut mahsulotlari",
+      example: "Dairy products.",
+      difficulty: "medium",
+    },
+    {
+      word: "grain",
+      translation: "don mahsulotlari",
+      example: "Whole grains.",
+      difficulty: "hard",
+    },
+  ],
+  grammar: {
+    topic: "Food: Countable/Uncountable Review",
+    formulas: [
+      {
+        title: "Quantifiers",
+        structure: "much/many/some/any/a lot of",
+        examples: ["many apples", "much rice"],
+      },
+    ],
+    rules: ["Ovqat mavzusida hisoblanuvchi-hisoblanmaydigan"],
+    exercises: [
+      {
+        question: "How ___ sugar do you need?",
+        answer: "much",
+        explanation: "Uncountable",
+      },
+      {
+        question: "There are ___ apples.",
+        answer: "many",
+        explanation: "Countable",
+      },
+      {
+        question: "We have ___ milk.",
+        answer: "some",
+        explanation: "Positive",
+      },
+    ],
+  },
+  speaking: {
+    topic: "Cooking talk",
+    phrases: [{ phrase: "a pinch of...", translation: "... chimdim" }],
+    tasks: ["Retsept haqida suhbat"],
+  },
+  listening: {
+    youtubeVideos: [
+      {
+        title: "Countable vs Uncountable",
+        url: "https://www.youtube.com/watch?v=6Wq2i3lNfTQ",
+      },
+    ],
+    resources: ["Cooking podcasts"],
+    exercises: ["Quantifier tanlang"],
+  },
+  homework: {
+    writing: "Sevimli retseptingiz",
+    speaking: "Xarid ro'yxati",
+    vocabulary: "6 so'z bilan gaplar",
+  },
+};
+
+const day27: DayData = {
+  id: 27,
+  vocabulary: [
+    {
+      word: "itinerary",
+      translation: "safari reja",
+      example: "Create an itinerary.",
+      difficulty: "hard",
+    },
+    {
+      word: "boarding pass",
+      translation: "parvoz kartasi",
+      example: "Keep your boarding pass.",
+      difficulty: "medium",
+    },
+    {
+      word: "customs",
+      translation: "bojxona",
+      example: "Go through customs.",
+      difficulty: "medium",
+    },
+    {
+      word: "delayed",
+      translation: "kechikkan",
+      example: "The flight is delayed.",
+      difficulty: "easy",
+    },
+    {
+      word: "accommodation",
+      translation: "yotoqxona/joylashuv",
+      example: "Find accommodation.",
+      difficulty: "hard",
+    },
+    {
+      word: "landmark",
+      translation: "diqqatga sazovor joy",
+      example: "Visit landmarks.",
+      difficulty: "easy",
+    },
+  ],
+  grammar: {
+    topic: "Travel English",
+    formulas: [
+      {
+        title: "Requests",
+        structure: "Can/Could/May + V1",
+        examples: ["Could you help me?"],
+      },
+    ],
+    rules: ["Aeroport, mehmonxona, yo'l so'rash iboralari"],
+    exercises: [
+      {
+        question: "___ you show me the way?",
+        answer: "Could",
+        explanation: "Polite request",
+      },
+      {
+        question: "The flight is ___ (kechikkan).",
+        answer: "delayed",
+        explanation: "Vocabulary",
+      },
+      {
+        question: "I need to go through ___.",
+        answer: "customs",
+        explanation: "Vocabulary",
+      },
+    ],
+  },
+  speaking: {
+    topic: "At the airport",
+    phrases: [{ phrase: "Where is the gate?", translation: "Qaysi chiqish?" }],
+    tasks: ["Safar suhbatlari"],
+  },
+  listening: {
+    youtubeVideos: [
+      {
+        title: "Travel English",
+        url: "https://www.youtube.com/watch?v=3QW3M8oZkVQ",
+      },
+    ],
+    resources: ["Travel podcasts"],
+    exercises: ["Dialog to'ldiring"],
+  },
+  homework: {
+    writing: "Safar rejangiz",
+    speaking: "Aeroport roli",
+    vocabulary: "6 so'z bilan gaplar",
+  },
+};
+
+const day28: DayData = {
+  id: 28,
+  vocabulary: [
+    {
+      word: "symptom",
+      translation: "alomat",
+      example: "What are your symptoms?",
+      difficulty: "medium",
+    },
+    {
+      word: "appointment",
+      translation: "qabul",
+      example: "Doctor's appointment.",
+      difficulty: "easy",
+    },
+    {
+      word: "prescription",
+      translation: "retsept (dori)",
+      example: "Get a prescription.",
+      difficulty: "hard",
+    },
+    {
+      word: "allergy",
+      translation: "allergiya",
+      example: "Allergy test.",
+      difficulty: "medium",
+    },
+    {
+      word: "treatment",
+      translation: "davolash",
+      example: "Treatment plan.",
+      difficulty: "hard",
+    },
+    {
+      word: "recovery",
+      translation: "tu'salish",
+      example: "Quick recovery.",
+      difficulty: "medium",
+    },
+  ],
+  grammar: {
+    topic: "Health & Doctor",
+    formulas: [
+      {
+        title: "Should/Must",
+        structure: "Advice & obligation",
+        examples: ["You should rest.", "You must see a doctor."],
+      },
+    ],
+    rules: ["Sog'liq mavzusi iboralari"],
+    exercises: [
+      {
+        question: "You ___ (should/must) drink water.",
+        answer: "should",
+        explanation: "Advice",
+      },
+      {
+        question: "He has an ___ with the doctor.",
+        answer: "appointment",
+        explanation: "Vocab",
+      },
+      {
+        question: "The doctor gave a ___.",
+        answer: "prescription",
+        explanation: "Vocab",
+      },
+    ],
+  },
+  speaking: {
+    topic: "At the clinic",
+    phrases: [{ phrase: "I have a fever.", translation: "Meni isitmam bor." }],
+    tasks: ["Sog'liq suhbatlari"],
+  },
+  listening: {
+    youtubeVideos: [
+      {
+        title: "Doctor Visit English",
+        url: "https://www.youtube.com/watch?v=xpG7i8J8r8M",
+      },
+    ],
+    resources: ["Health podcasts"],
+    exercises: ["Symptoms matching"],
+  },
+  homework: {
+    writing: "Kasal bo'lgan kuningiz",
+    speaking: "Doktor bilan dialog",
+    vocabulary: "6 so'z bilan gaplar",
+  },
+};
+
+const day29: DayData = {
+  id: 29,
+  vocabulary: [
+    {
+      word: "refund",
+      translation: "pulni qaytarish",
+      example: "Ask for a refund.",
+      difficulty: "medium",
+    },
+    {
+      word: "receipt",
+      translation: "chek",
+      example: "Keep the receipt.",
+      difficulty: "easy",
+    },
+    {
+      word: "warranty",
+      translation: "kafolat",
+      example: "Under warranty.",
+      difficulty: "hard",
+    },
+    {
+      word: "exchange",
+      translation: "almashtirish",
+      example: "Exchange the item.",
+      difficulty: "medium",
+    },
+    {
+      word: "faulty",
+      translation: "nuqsonli",
+      example: "Faulty product.",
+      difficulty: "hard",
+    },
+    {
+      word: "customer service",
+      translation: "mijoz xizmati",
+      example: "Call customer service.",
+      difficulty: "easy",
+    },
+  ],
+  grammar: {
+    topic: "Shopping & Complaints",
+    formulas: [
+      {
+        title: "Requests/Complaints",
+        structure: "polite phrases",
+        examples: ["I'd like to complain about..."],
+      },
+    ],
+    rules: ["Rasmiy shikoyat iboralari"],
+    exercises: [
+      {
+        question: "I want a ___ (pulni qaytarish).",
+        answer: "refund",
+        explanation: "Vocab",
+      },
+      {
+        question: "Do you have the ___?",
+        answer: "receipt",
+        explanation: "Vocab",
+      },
+      {
+        question: "It's still under ___.",
+        answer: "warranty",
+        explanation: "Vocab",
+      },
+    ],
+  },
+  speaking: {
+    topic: "At the store",
+    phrases: [
+      {
+        phrase: "I'd like to speak to the manager.",
+        translation: "Menejer bilan gaplashmoqchiman.",
+      },
+    ],
+    tasks: ["Do'konda vaziyatlar"],
+  },
+  listening: {
+    youtubeVideos: [
+      {
+        title: "Shopping English",
+        url: "https://www.youtube.com/watch?v=7jl2i6k7j5g",
+      },
+    ],
+    resources: ["Retail conversations"],
+    exercises: ["Complaint role-play"],
+  },
+  homework: {
+    writing: "Shikoyat xatini yozing",
+    speaking: "Do'konda dialog",
+    vocabulary: "6 so'z bilan gaplar",
+  },
+};
+
+const day30: DayData = {
+  id: 30,
+  vocabulary: [
+    {
+      word: "review",
+      translation: "ko'rib chiqish",
+      example: "Monthly review.",
+      difficulty: "easy",
+    },
+    {
+      word: "assessment",
+      translation: "baholash",
+      example: "Final assessment.",
+      difficulty: "medium",
+    },
+    {
+      word: "strength",
+      translation: "kuchli tomon",
+      example: "Identify strengths.",
+      difficulty: "hard",
+    },
+    {
+      word: "weakness",
+      translation: "kuchsiz tomon",
+      example: "Find weaknesses.",
+      difficulty: "hard",
+    },
+    {
+      word: "goal",
+      translation: "maqsad",
+      example: "Set next goals.",
+      difficulty: "easy",
+    },
+    {
+      word: "progress",
+      translation: "rivojlanish",
+      example: "Measure progress.",
+      difficulty: "easy",
+    },
+  ],
+  grammar: {
+    topic: "Month 1 Review & Assessment",
+    formulas: [
+      {
+        title: "Mixed Grammar",
+        structure: "review of month 1",
+        examples: ["tense contrast", "modals", "conditionals"],
+      },
+    ],
+    rules: ["Barcha mavzular qayta ko'rib chiqiladi"],
+    exercises: [
+      {
+        question: "Choose correct: If it rains, we ___ (stay/will stay).",
+        answer: "will stay",
+        explanation: "1st conditional",
+      },
+      {
+        question: "He ___ (has/had) left by 6.",
+        answer: "had",
+        explanation: "Past Perfect",
+      },
+      {
+        question: "It ___ (is made/is making) of glass.",
+        answer: "is made",
+        explanation: "Passive",
+      },
+    ],
+  },
+  speaking: {
+    topic: "Final presentation",
+    phrases: [
+      {
+        phrase: "I have improved in...",
+        translation: "Men ... bo'yicha yaxshilashdim",
+      },
+    ],
+    tasks: ["Oy yakuni va reja"],
+  },
+  listening: {
+    youtubeVideos: [
+      {
+        title: "English Review",
+        url: "https://www.youtube.com/watch?v=QVv1r9d-0Qw",
+      },
+    ],
+    resources: ["Monthly review resources"],
+    exercises: ["Mini test & speaking task"],
+  },
+  homework: {
+    writing: "Oylik refleksiya",
+    speaking: "3 daqiqa taqdimot",
+    vocabulary: "6 so'z bilan gaplar",
+  },
+};
+
 export const month1: MonthData = {
   id: 1,
   title: "Pre-Intermediate Foundation",
   description: "So'z boyligi va asosiy grammatika",
   color: "from-blue-500 to-cyan-500",
-  days: [day1, day2, day3, day4, ...extraMonth1Days, ...moreMonth1Days],
+  days: [
+    day1,
+    day2,
+    day3,
+    day4,
+    day5,
+    day6,
+    day7,
+    day8,
+    day9,
+    day10,
+    day11,
+    day12,
+    day13,
+    day14,
+    day15,
+    day16,
+    day17,
+    day18,
+    day19,
+    day20,
+    day21,
+    day22,
+    day23,
+    day24,
+    day25,
+    day26,
+    day27,
+    day28,
+    day29,
+    day30,
+  ],
 };
