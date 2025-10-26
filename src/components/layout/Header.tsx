@@ -1,21 +1,31 @@
-import { BookOpen, Trophy } from "lucide-react";
+import { Trophy, Globe } from "lucide-react";
 
 interface HeaderProps {
   totalProgress: number;
+  languageName?: string;
+  languageIcon?: string;
 }
 
-export const Header = ({ totalProgress }: HeaderProps) => {
+export const Header = ({
+  totalProgress,
+  languageName,
+  languageIcon,
+}: HeaderProps) => {
   return (
     <div className="bg-black/20 backdrop-blur-sm border-b border-white/10">
       <div className="max-w-7xl mx-auto px-6 py-6">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="p-3 bg-linear-to-br from-yellow-400 to-orange-500 rounded-xl">
-              <BookOpen className="w-8 h-8 text-white" />
-            </div>
+            {languageIcon ? (
+              <div className="text-5xl">{languageIcon}</div>
+            ) : (
+              <div className="p-3 bg-linear-to-br from-blue-400 to-cyan-500 rounded-xl">
+                <Globe className="w-8 h-8 text-white" />
+              </div>
+            )}
             <div>
               <h1 className="text-3xl font-bold text-white">
-                English Learning Journey
+                {languageName ? `${languageName} Learning` : "PolyglotPath"}
               </h1>
               <p className="text-purple-300 mt-1">
                 3 oyda professional darajaga

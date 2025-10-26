@@ -1,4 +1,4 @@
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, Navigate } from "react-router-dom";
 import { DayHeader } from "../components/layout/DayHeader";
 import { SectionTabs } from "../components/shared/SectionTabs";
 import { VocabularySection } from "../components/sections/VocabularySection";
@@ -7,27 +7,38 @@ import { SpeakingSection } from "../components/sections/SpeakingSection";
 import { ListeningSection } from "../components/sections/ListeningSection";
 import { HomeworkSection } from "../components/sections/HomeworkSection";
 import { useProgress } from "../hooks/useProgress";
-import { learningData } from "../data/learningData";
+import { getLanguageById } from "../data/platformData";
 import { useState } from "react";
 
 export const DayPage = () => {
-  const { monthId, dayId } = useParams();
+  const { languageId, monthId, dayId } = useParams<{
+    languageId: string;
+    monthId: string;
+    dayId: string;
+  }>();
   const navigate = useNavigate();
   const [activeSection, setActiveSection] = useState("vocabulary");
   const { completedDays, toggleDayComplete } = useProgress();
 
-  const currentMonth = learningData.months.find(
+  const languageData = languageId ? getLanguageById(languageId) : null;
+
+  if (!languageData) {
+    return <Navigate to="/" replace />;
+  }
+
+  const currentMonth = languageData.learningData.months.find(
     (m) => m.id === Number(monthId)
   );
 
   const currentDay = currentMonth?.days.find((d) => d.id === Number(dayId));
 
   if (!currentMonth || !currentDay) {
-    navigate("/");
+    navigate(`/${languageId}`);
     return null;
   }
 
-  const isCompleted = completedDays[`month${monthId}-day${dayId}`];
+  const isCompleted =
+    completedDays[`${languageId}-month${monthId}-day${dayId}`];
 
   return (
     <div className="min-h-screen bg-linear-to-br from-slate-900 via-purple-900 to-slate-900">
@@ -35,9 +46,9 @@ export const DayPage = () => {
         dayNum={dayId!}
         monthTitle={currentMonth.title}
         isCompleted={isCompleted}
-        onBack={() => navigate(`/month/${monthId}`)}
+        onBack={() => navigate(`/${languageId}/month/${monthId}`)}
         onToggleComplete={() =>
-          toggleDayComplete(Number(monthId), Number(dayId))
+          toggleDayComplete(Number(monthId), Number(dayId), languageId)
         }
       />
 

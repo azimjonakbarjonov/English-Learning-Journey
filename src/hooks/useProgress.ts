@@ -5,22 +5,32 @@ export const useProgress = () => {
   const [completedDays, setCompletedDays] = useState<CompletedDays>({});
 
   useEffect(() => {
-    const saved = localStorage.getItem("englishProgress");
+    const saved = localStorage.getItem("languageLearningProgress");
     if (saved) {
       setCompletedDays(JSON.parse(saved));
     }
   }, []);
 
-  const toggleDayComplete = (monthId: number, dayId: number) => {
-    const key = `month${monthId}-day${dayId}`;
+  const toggleDayComplete = (
+    monthId: number,
+    dayId: number,
+    languageId: string = "english"
+  ) => {
+    const key = `${languageId}-month${monthId}-day${dayId}`;
     const newCompleted = { ...completedDays, [key]: !completedDays[key] };
     setCompletedDays(newCompleted);
-    localStorage.setItem("englishProgress", JSON.stringify(newCompleted));
+    localStorage.setItem(
+      "languageLearningProgress",
+      JSON.stringify(newCompleted)
+    );
   };
 
-  const getMonthProgress = (monthId: number) => {
+  const getMonthProgress = (
+    monthId: number,
+    languageId: string = "english"
+  ) => {
     const monthCompleted = Object.keys(completedDays).filter((k) =>
-      k.startsWith(`month${monthId}`)
+      k.startsWith(`${languageId}-month${monthId}`)
     ).length;
     return {
       completed: monthCompleted,
@@ -28,7 +38,12 @@ export const useProgress = () => {
     };
   };
 
-  const getTotalProgress = () => {
+  const getTotalProgress = (languageId?: string) => {
+    if (languageId) {
+      return Object.keys(completedDays).filter((k) =>
+        k.startsWith(`${languageId}-`)
+      ).length;
+    }
     return Object.keys(completedDays).length;
   };
 

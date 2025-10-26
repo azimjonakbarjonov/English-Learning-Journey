@@ -74,6 +74,20 @@ export interface LearningData {
   months: MonthData[];
 }
 
+export interface LanguageData {
+  id: string;
+  name: string;
+  nativeName: string;
+  icon: string;
+  color: string;
+  description: string;
+  learningData: LearningData;
+}
+
+export interface PlatformData {
+  languages: LanguageData[];
+}
+
 export interface CompletedDays {
   [key: string]: boolean;
 }
