@@ -199,13 +199,13 @@ const day1: DayData = {
     youtubeVideos: [
       {
         title: "Present Simple vs Present Continuous",
-        url: "https://www.youtube.com/watch?v=gZXtF5YuA6M",
+        url: "https://www.youtube.com/watch?v=3_-U78SzHVI",
         description:
           "Learn the difference between Present Simple and Present Continuous tenses",
       },
       {
         title: "How to Introduce Yourself in English",
-        url: "https://www.youtube.com/watch?v=VyT-Gm_VC0k",
+        url: "https://www.youtube.com/watch?v=5whkCF7TgZ0",
         description: "Professional self-introduction tips and examples",
       },
     ],
@@ -401,13 +401,13 @@ const day2: DayData = {
     youtubeVideos: [
       {
         title: "Past Simple vs Past Continuous",
-        url: "https://www.youtube.com/watch?v=UeKZ6Qj0Pwo",
+        url: "https://www.youtube.com/watch?v=0CBcD06Jk7U",
         description:
           "Learn the difference between Past Simple and Past Continuous tenses",
       },
       {
         title: "Job Interview Tips in English",
-        url: "https://www.youtube.com/watch?v=9FuKb_XfHI8",
+        url: "https://www.youtube.com/watch?v=-AOQl94ZYn8",
         description: "Essential tips for job interviews in English",
       },
     ],
@@ -633,12 +633,12 @@ const day3: DayData = {
     youtubeVideos: [
       {
         title: "Future Tenses in English",
-        url: "https://www.youtube.com/watch?v=LemLpI7qEXI",
+        url: "https://www.youtube.com/watch?v=Zyg-n28rhqc",
         description: "Learn how to use different future tenses in English",
       },
       {
         title: "How to Make Plans in English",
-        url: "https://www.youtube.com/watch?v=1tN_PYHeGpE",
+        url: "https://www.youtube.com/watch?v=5-T6Xqlh6BU",
         description: "Learn useful phrases for making arrangements",
       },
     ],
@@ -856,13 +856,8 @@ const day4: DayData = {
   listening: {
     youtubeVideos: [
       {
-        title: "Modal Verbs in English",
-        url: "https://www.youtube.com/watch?v=BT3JbwlpQxU",
-        description: "Learn how to use modal verbs for permission and requests",
-      },
-      {
         title: "How to Make Polite Requests",
-        url: "https://www.youtube.com/watch?v=Td6WYj2WTF4",
+        url: "https://www.youtube.com/watch?v=sD4ChxJ73RA",
         description: "Master the art of making polite requests in English",
       },
     ],
@@ -1019,11 +1014,11 @@ const day5: DayData = {
     youtubeVideos: [
       {
         title: "Comparatives & Superlatives",
-        url: "https://www.youtube.com/watch?v=zB8eTiG2QFw",
+        url: "https://www.youtube.com/watch?v=oGr7l3q7SMI",
       },
       {
         title: "Making Comparisons",
-        url: "https://www.youtube.com/watch?v=4dKmY2p_Bno",
+        url: "https://www.youtube.com/watch?v=6qp1JoFAhHQ",
       },
     ],
     resources: ["BBC: Comparatives/Superlatives"],
@@ -1151,7 +1146,7 @@ const day6: DayData = {
     youtubeVideos: [
       {
         title: "Quantifiers",
-        url: "https://www.youtube.com/watch?v=8zEo5o6mPq4",
+        url: "https://www.youtube.com/watch?v=MFkdDrf5aII",
       },
     ],
     resources: ["6 Minute English"],
@@ -1272,7 +1267,7 @@ const day7: DayData = {
     youtubeVideos: [
       {
         title: "Prepositions",
-        url: "https://www.youtube.com/watch?v=M6ZBvJkCzH4",
+        url: "https://www.youtube.com/watch?v=8t4JKCvdLNE",
       },
     ],
     resources: ["Oxford Prepositions"],
@@ -1395,7 +1390,7 @@ const day8: DayData = {
   },
   listening: {
     youtubeVideos: [
-      { title: "Articles", url: "https://www.youtube.com/watch?v=Gq1X6r7yP3E" },
+      { title: "Articles", url: "https://www.youtube.com/watch?v=49RNu3zbR5U" },
     ],
     resources: ["Cambridge: Articles"],
     exercises: ["A/An/The ni tanlang"],
@@ -1515,7 +1510,11 @@ const day9: DayData = {
   },
   listening: {
     youtubeVideos: [
-      { title: "Pronouns", url: "https://www.youtube.com/watch?v=5eXxC2D1o4k" },
+      { title: "Pronouns", url: "https://www.youtube.com/watch?v=FLUwRWhGZcc" },
+      {
+        title: "Pronouns2",
+        url: "https://www.youtube.com/watch?v=w4e2YVU5vbk",
+      },
     ],
     resources: ["Grammar Bytes"],
     exercises: ["Olmoshlarni joylashtiring"],
@@ -1638,7 +1637,7 @@ const day10: DayData = {
     youtubeVideos: [
       {
         title: "Present Perfect vs Past Simple",
-        url: "https://www.youtube.com/watch?v=By0QdS1FJyg",
+        url: "https://www.youtube.com/watch?v=f9chNIPYs18",
       },
     ],
     resources: ["BBC: PP vs PS"],
@@ -1747,7 +1746,7 @@ const day11: DayData = {
     youtubeVideos: [
       {
         title: "Zero & First Conditional",
-        url: "https://www.youtube.com/watch?v=HqVY9B3s5bA",
+        url: "https://www.youtube.com/watch?v=JnIVizF3eys",
       },
     ],
     resources: ["BBC Learning English: Conditionals"],
@@ -1848,7 +1847,7 @@ const day12: DayData = {
     youtubeVideos: [
       {
         title: "Second Conditional",
-        url: "https://www.youtube.com/watch?v=KJYGCkzY8Ys",
+        url: "https://www.youtube.com/watch?v=dX5opXNxAvw",
       },
     ],
     resources: ["Perfect English Grammar: 2nd conditional"],
@@ -1953,7 +1952,7 @@ const day13: DayData = {
     youtubeVideos: [
       {
         title: "Third Conditional",
-        url: "https://www.youtube.com/watch?v=Kz4x9Yt6j6A",
+        url: "https://www.youtube.com/watch?v=xwOCqtaZDrk",
       },
     ],
     resources: ["Grammar: third conditional"],
@@ -2048,7 +2047,7 @@ const day14: DayData = {
     youtubeVideos: [
       {
         title: "Passive Voice",
-        url: "https://www.youtube.com/watch?v=_2S17Z1r3g8",
+        url: "https://www.youtube.com/watch?v=nkAyggAM1q4",
       },
     ],
     resources: ["BBC Passive"],
@@ -2148,7 +2147,7 @@ const day15: DayData = {
     youtubeVideos: [
       {
         title: "Passive Tenses",
-        url: "https://www.youtube.com/watch?v=0Qv3xb8R9qk",
+        url: "https://www.youtube.com/watch?v=N7uvEllP5Jg",
       },
     ],
     resources: ["EngVid Passive"],
@@ -2247,7 +2246,7 @@ const day16: DayData = {
     youtubeVideos: [
       {
         title: "Reported Speech",
-        url: "https://www.youtube.com/watch?v=9cP9e2dD0eA",
+        url: "https://www.youtube.com/watch?v=YN-vKQYgmIk",
       },
     ],
     resources: ["BBC Reported Speech"],
@@ -2352,7 +2351,7 @@ const day17: DayData = {
     youtubeVideos: [
       {
         title: "Reported Questions",
-        url: "https://www.youtube.com/watch?v=TSc1b7m3QnA",
+        url: "https://www.youtube.com/watch?v=4l-ubNtrSW8",
       },
     ],
     resources: ["Engvid Reported Questions"],
@@ -2449,7 +2448,7 @@ const day18: DayData = {
     youtubeVideos: [
       {
         title: "Should/Must",
-        url: "https://www.youtube.com/watch?v=6sVj0gQx9xU",
+        url: "https://www.youtube.com/watch?v=ppwXw2Dh-l0",
       },
     ],
     resources: ["Modal verbs overview"],
@@ -2544,7 +2543,7 @@ const day19: DayData = {
     youtubeVideos: [
       {
         title: "Common Phrasal Verbs",
-        url: "https://www.youtube.com/watch?v=V4Hn0nKpQ9M",
+        url: "https://www.youtube.com/watch?v=QOqT-2CffeE",
       },
     ],
     resources: ["List of phrasal verbs"],
@@ -2636,7 +2635,7 @@ const day20: DayData = {
     youtubeVideos: [
       {
         title: "Phrasal Verbs List",
-        url: "https://www.youtube.com/watch?v=tZ1z7kYbd7E",
+        url: "https://www.youtube.com/watch?v=clgWUS1Yshw",
       },
     ],
     resources: ["Phrasal verbs practice"],
@@ -2732,7 +2731,7 @@ const day21: DayData = {
   },
   listening: {
     youtubeVideos: [
-      { title: "Adverbs", url: "https://www.youtube.com/watch?v=y5f0k-8Q8xM" },
+      { title: "Adverbs", url: "https://www.youtube.com/watch?v=Gehu7kIAEuk" },
     ],
     resources: ["Adverbs practice"],
     exercises: ["Bo'sh joylarni to'ldirish"],
@@ -2826,7 +2825,7 @@ const day22: DayData = {
     youtubeVideos: [
       {
         title: "Relative Clauses",
-        url: "https://www.youtube.com/watch?v=MZfI0rF4H54",
+        url: "https://www.youtube.com/watch?v=PUSsEM3mJ-E",
       },
     ],
     resources: ["Relative clauses guide"],
@@ -2921,7 +2920,7 @@ const day23: DayData = {
     youtubeVideos: [
       {
         title: "Present Perfect Continuous",
-        url: "https://www.youtube.com/watch?v=0o8f7m4N6qk",
+        url: "https://www.youtube.com/watch?v=Q0N0os25TTo",
       },
     ],
     resources: ["Continuous review"],
@@ -3011,7 +3010,7 @@ const day24: DayData = {
     youtubeVideos: [
       {
         title: "Past Perfect",
-        url: "https://www.youtube.com/watch?v=Gf2c1jT0Kz4",
+        url: "https://www.youtube.com/watch?v=c-1kgDeUXgk",
       },
     ],
     resources: ["Perfect tenses"],
@@ -3109,7 +3108,7 @@ const day25: DayData = {
     youtubeVideos: [
       {
         title: "Future Perfect",
-        url: "https://www.youtube.com/watch?v=4M9S9mF8YtU",
+        url: "https://www.youtube.com/watch?v=o86r62SMHRk",
       },
     ],
     resources: ["Perfect tenses"],
@@ -3199,7 +3198,7 @@ const day26: DayData = {
     youtubeVideos: [
       {
         title: "Countable vs Uncountable",
-        url: "https://www.youtube.com/watch?v=6Wq2i3lNfTQ",
+        url: "https://www.youtube.com/watch?v=q5rWCTq47iU",
       },
     ],
     resources: ["Cooking podcasts"],
@@ -3289,7 +3288,7 @@ const day27: DayData = {
     youtubeVideos: [
       {
         title: "Travel English",
-        url: "https://www.youtube.com/watch?v=3QW3M8oZkVQ",
+        url: "https://www.youtube.com/watch?v=IMZoaNejsok",
       },
     ],
     resources: ["Travel podcasts"],
@@ -3379,7 +3378,7 @@ const day28: DayData = {
     youtubeVideos: [
       {
         title: "Doctor Visit English",
-        url: "https://www.youtube.com/watch?v=xpG7i8J8r8M",
+        url: "https://www.youtube.com/watch?v=OYI837JLLlo",
       },
     ],
     resources: ["Health podcasts"],
@@ -3474,7 +3473,7 @@ const day29: DayData = {
     youtubeVideos: [
       {
         title: "Shopping English",
-        url: "https://www.youtube.com/watch?v=7jl2i6k7j5g",
+        url: "https://www.youtube.com/watch?v=mmDsFp1XH1g",
       },
     ],
     resources: ["Retail conversations"],
@@ -3569,7 +3568,7 @@ const day30: DayData = {
     youtubeVideos: [
       {
         title: "English Review",
-        url: "https://www.youtube.com/watch?v=QVv1r9d-0Qw",
+        url: "https://www.youtube.com/watch?v=cTQrl-1KE7U",
       },
     ],
     resources: ["Monthly review resources"],

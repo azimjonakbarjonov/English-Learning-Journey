@@ -202,12 +202,12 @@ const day1: DayData = {
     youtubeVideos: [
       {
         title: "How to Use Present Perfect Tense",
-        url: "https://www.youtube.com/watch?v=kZhh0A4ydlM",
+        url: "https://www.youtube.com/watch?v=tLaiUarjNj8",
         description: "Master the Present Perfect tense with real-life examples",
       },
       {
         title: "How to Run an Effective Meeting",
-        url: "https://www.youtube.com/watch?v=xmLFwNZWVBk",
+        url: "https://www.youtube.com/watch?v=iQsw3cdJbbM",
         description:
           "Learn the key principles of running successful business meetings",
       },
@@ -428,12 +428,12 @@ const day2: DayData = {
     youtubeVideos: [
       {
         title: "How to Write Professional Emails in English",
-        url: "https://www.youtube.com/watch?v=3QMXOXgDz74",
+        url: "https://www.youtube.com/watch?v=1XctnF7C74s",
         description: "Learn the structure and language of professional emails",
       },
       {
         title: "Passive Voice Explained",
-        url: "https://www.youtube.com/watch?v=_kYMGy6xQIM",
+        url: "https://www.youtube.com/watch?v=DJvx6xmpv6A",
         description: "Master the passive voice with clear examples",
       },
     ],
@@ -653,12 +653,12 @@ const day3: DayData = {
     youtubeVideos: [
       {
         title: "First and Second Conditional",
-        url: "https://www.youtube.com/watch?v=3kAMg7vQ6U4",
+        url: "https://www.youtube.com/watch?v=KVRozKu2pZs",
         description: "Complete guide to understanding and using conditionals",
       },
       {
         title: "How to Give Advice in English",
-        url: "https://www.youtube.com/watch?v=tg0cUWYDF_w",
+        url: "https://www.youtube.com/watch?v=-tOl_215wHA",
         description: "Learn different ways to give advice using conditionals",
       },
     ],
@@ -874,12 +874,12 @@ const day4: DayData = {
     youtubeVideos: [
       {
         title: "Reported Speech - Complete Guide",
-        url: "https://www.youtube.com/watch?v=bwCHmKW7WZE",
+        url: "https://www.youtube.com/watch?v=Mi9UPE2C91I",
         description: "Master reported speech with clear examples and practice",
       },
       {
         title: "How to Report What Someone Said",
-        url: "https://www.youtube.com/watch?v=5kXqhCBPWjQ",
+        url: "https://www.youtube.com/watch?v=eplQBhE0-Hg",
         description: "Learn to report statements and questions naturally",
       },
     ],
@@ -1087,12 +1087,12 @@ const day5: DayData = {
     youtubeVideos: [
       {
         title: "Business English Phrasal Verbs",
-        url: "https://www.youtube.com/watch?v=P_qSJjhGEFA",
+        url: "https://www.youtube.com/watch?v=2J-8h6cx0uE",
         description: "Learn essential phrasal verbs for business English",
       },
       {
         title: "20 Phrasal Verbs for Work",
-        url: "https://www.youtube.com/watch?v=YrZZKZQ0MXo",
+        url: "https://www.youtube.com/watch?v=5PjX-T2-jN0",
         description: "Master the most common work-related phrasal verbs",
       },
     ],
@@ -1293,12 +1293,12 @@ const day6: DayData = {
     youtubeVideos: [
       {
         title: "Negotiation Skills in English",
-        url: "https://www.youtube.com/watch?v=guXKpRZ9gFg",
+        url: "https://www.youtube.com/watch?v=BLBRRNwMZNE",
         description: "Master the language and techniques of negotiation",
       },
       {
         title: "Business English for Negotiations",
-        url: "https://www.youtube.com/watch?v=PqMPVKpfdQI",
+        url: "https://www.youtube.com/watch?v=-3mFnAk9sbw",
         description:
           "Learn key phrases and strategies for business negotiations",
       },
@@ -1503,12 +1503,12 @@ const day7: DayData = {
     youtubeVideos: [
       {
         title: "Customer Service English",
-        url: "https://www.youtube.com/watch?v=PjN4qO8T8yA",
+        url: "https://www.youtube.com/watch?v=xag49G_3U8Y",
         description: "Learn essential phrases for excellent customer service",
       },
       {
         title: "How to Handle Difficult Customers",
-        url: "https://www.youtube.com/watch?v=xHpkPkXdjEE",
+        url: "https://www.youtube.com/watch?v=ZXH_HTEpqOU",
         description:
           "Strategies and language for managing challenging situations",
       },
@@ -1711,13 +1711,8 @@ const day8: DayData = {
   listening: {
     youtubeVideos: [
       {
-        title: "How to Give a Great Presentation",
-        url: "https://www.youtube.com/watch?v=Iwpi1Lm6dFo",
-        description: "Learn the key elements of effective presentations",
-      },
-      {
         title: "Presentation Skills in English",
-        url: "https://www.youtube.com/watch?v=QjGVy_pKN_I",
+        url: "https://www.youtube.com/watch?v=5m-C5mwpmxU",
         description: "Master the language and techniques of presentations",
       },
     ],
@@ -1921,12 +1916,12 @@ const day9: DayData = {
     youtubeVideos: [
       {
         title: "Third Conditional Explained",
-        url: "https://www.youtube.com/watch?v=u1b13GIBXuA",
+        url: "https://www.youtube.com/watch?v=xwOCqtaZDrk",
         description: "Master the third conditional with clear examples",
       },
       {
         title: "Mixed Conditionals",
-        url: "https://www.youtube.com/watch?v=HV2Q6o2mRHw",
+        url: "https://www.youtube.com/watch?v=djOhWXvjeaQ",
         description: "Learn how to use mixed conditionals naturally",
       },
     ],
@@ -2132,12 +2127,12 @@ const day10: DayData = {
     youtubeVideos: [
       {
         title: "Relative Clauses Explained",
-        url: "https://www.youtube.com/watch?v=5U_tY_N5_vI",
+        url: "https://www.youtube.com/watch?v=Ers3fJPU2JI",
         description: "Master defining and non-defining relative clauses",
       },
       {
         title: "Who, Which, Where, Whose",
-        url: "https://www.youtube.com/watch?v=y-yzBJHJqDo",
+        url: "https://www.youtube.com/watch?v=yMsPH6t72_A",
         description: "Learn how to use relative pronouns correctly",
       },
     ],
@@ -2341,12 +2336,12 @@ const day11: DayData = {
     youtubeVideos: [
       {
         title: "Passive Voice in All Tenses",
-        url: "https://www.youtube.com/watch?v=o1lUJXlíZ7A",
+        url: "https://www.youtube.com/watch?v=iCPI-qYF_uA",
         description: "Complete guide to passive voice in all English tenses",
       },
       {
         title: "Using Passive Voice in Academic Writing",
-        url: "https://www.youtube.com/watch?v=aY7iMRb4qdE",
+        url: "https://www.youtube.com/watch?v=HfKArXZtbXI",
         description:
           "Learn when and how to use passive voice in formal writing",
       },
@@ -2549,12 +2544,12 @@ const day12: DayData = {
     youtubeVideos: [
       {
         title: "Gerunds and Infinitives Explained",
-        url: "https://www.youtube.com/watch?v=V71GhIg7eY4",
+        url: "https://www.youtube.com/watch?v=gqtmM3bVMaE",
         description: "Master when to use gerunds and infinitives",
       },
       {
         title: "Common Mistakes with Gerunds and Infinitives",
-        url: "https://www.youtube.com/watch?v=CJnKd9Ux-4w",
+        url: "https://www.youtube.com/watch?v=28j1zKDDThQ",
         description: "Learn to avoid common errors",
       },
     ],
@@ -2757,12 +2752,12 @@ const day13: DayData = {
     youtubeVideos: [
       {
         title: "Discourse Markers in English",
-        url: "https://www.youtube.com/watch?v=Y5kDgPu_O88",
+        url: "https://www.youtube.com/watch?v=wOx50owZLyA",
         description: "Learn how to connect ideas naturally",
       },
       {
         title: "Linking Words for IELTS & Professional English",
-        url: "https://www.youtube.com/watch?v=hCw4sZqFCxs",
+        url: "https://www.youtube.com/watch?v=nv2IqOMJPRg",
         description: "Master advanced linking words",
       },
     ],
@@ -2967,12 +2962,12 @@ const day14: DayData = {
     youtubeVideos: [
       {
         title: "Quantifiers in English",
-        url: "https://www.youtube.com/watch?v=X0B-C7lZAI0",
+        url: "https://www.youtube.com/watch?v=MFkdDrf5aII",
         description: "Master the use of quantifiers",
       },
       {
         title: "Articles: A, An, The",
-        url: "https://www.youtube.com/watch?v=aiFJrvpPjAE",
+        url: "https://www.youtube.com/watch?v=3aQJ_OtIEFc",
         description: "Learn when to use articles correctly",
       },
     ],
@@ -3175,12 +3170,12 @@ const day15: DayData = {
     youtubeVideos: [
       {
         title: "Noun Clauses Explained",
-        url: "https://www.youtube.com/watch?v=WPzI49qnPzI",
+        url: "https://www.youtube.com/watch?v=ZvvyKfxVZ3w",
         description: "Learn how to use noun clauses correctly",
       },
       {
         title: "Embedded Questions",
-        url: "https://www.youtube.com/watch?v=P7IXtOJb7-E",
+        url: "https://www.youtube.com/watch?v=OQqyOhgTlCY",
         description: "Master indirect questions and noun clauses",
       },
     ],
